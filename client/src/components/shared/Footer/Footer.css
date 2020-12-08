@@ -1,3 +1,42 @@
 #footer-main-container {
   background-color: #8f5e59;
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text {
+  font-size: 10px;
+  color: #b1a89c;
+}
+
+#footer-left {
+  margin-left: 2vw;
+}
+
+#footer-right {
+  margin-right: 4vw;
+  display: flex;
+  width: 8vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gh-logo {
+  width: 70px;
+  height: auto;
+}
+#li-logo {
+  width: 60px;
+  height: auto;
+}
+
+#gh-logo:hover {
+  transform: scale(1.1, 1.1);
+}
+#li-logo:hover {
+  transform: scale(1.1, 1.1);
 }

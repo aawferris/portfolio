@@ -3,6 +3,7 @@
   justify-content: space-between;
   background-color: #8f5e59;
   padding: 2vh 0vw;
+  height: 100px;
 }
 
 #header-left {
@@ -31,20 +32,23 @@
   background-color: transparent;
   border: none;
   font-size: 15px;
+  outline: none;
 }
 
 #nav-menu {
   display: flex;
   flex-direction: column;
+  outline: none;
 }
 
 .dropdown-item {
   color: #f7f7f7;
   margin-right: 3vw;
+  text-decoration: none;
 }
 
 .dropdown-item:hover {
-  background-color: #790000;
+  background-color: #38c2bb;
   color: #fff;
 }
 
@@ -85,8 +89,12 @@ option {
 }
 
 #profile-pic {
-  width: 80px;
+  width: 100px;
   height: auto;
   border-radius: 50%;
   margin-left: 2vw;
+}
+
+#profile-pic:hover {
+  transform: scale(1.1, 1.1);
 }
