@@ -33,7 +33,7 @@ function About(props) {
                 <img src="/assets/dumbbell.png" className="bullet" alt="dumbbell icon"/> 
                 <div className="bullet-descriptions">
                   <h4 className="bullet-title">Exercise</h4>
-                  <p className="bullet-info">I enjoy outdoor activites and lifting wieghts. I have played and coached soccer in High School and Middel School.</p>
+                  <p className="bullet-info">I enjoy outdoor activites and lifting wieghts. I have played and coached soccer in High School and Middle School.</p>
                 </div>
               </li>
               <li className="about-bullet">
@@ -47,7 +47,7 @@ function About(props) {
                 <img src="/assets/travel.png" className="bullet" alt="travel icon"/> 
                 <div className="bullet-descriptions">
                   <h4 className="bullet-title">Travel</h4>
-                  <p className="bullet-info">Whether it's my own backyard or around the world, I enjoy exploring new places and experiencing new cultures and people.  I have lived in Guatemala for 6 months, been to five European countries, 3 Asain countries and various other places.</p>
+                  <p className="bullet-info">Whether it's my own backyard or around the world, I enjoy exploring new places and experiencing new cultures and people.  I have lived in Guatemala for 6 months, been to five European countries, 3 Asian countries and various other places.</p>
                 </div>
               </li>
             </ul>

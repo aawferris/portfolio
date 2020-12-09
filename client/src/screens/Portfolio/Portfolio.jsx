@@ -82,7 +82,7 @@ function Portfolio(props) {
             <div className="top-left">
               <p className="number">04</p>
               <p className="title">CIA Cover Story Generator</p>
-              <p className="languages">Vaniall Javascript, CSS, HTML5</p>
+              <p className="languages">Vanilla Javascript, CSS, HTML5</p>
             </div>
             <div className="top-right">
             <a href="https://aawferris.github.io/CIA-cover-story/index.html" target="_blank" rel="noopener"><img src="/assets/internet.png" alt="link to github" className="deploy-link" /></a>
@@ -94,7 +94,7 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              This is the first site I ever programmed using code. I used Vanilla Javascript as well as made 
+              This is the first site I ever programmed using code. I used Javascript as well as made 
                axios calls to RESTFUL APIs to to create this silly, random person generator, styled to be a 
               tool for CIA operatives to generate a cover story.
             </p>

@@ -1,11 +1,5 @@
 #footer-main-container {
-  background: rgb(143, 94, 89);
-  background: linear-gradient(
-    90deg,
-    rgba(56, 194, 187, 0.9472163865546218) 0%,
-    rgba(45, 57, 76, 0.8743872549019608) 66%,
-    rgba(143, 94, 89, 1) 98%
-  );
+  background: linear-gradient(90deg, #2d394cee 66%, #8f5e59 98%);
   display: flex;
   position: absolute;
   height: 100px;
@@ -34,10 +28,14 @@
 #gh-logo {
   width: 70px;
   height: auto;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 #li-logo {
   width: 60px;
   height: auto;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 #gh-logo:hover {
