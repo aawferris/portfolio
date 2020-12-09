@@ -24,10 +24,9 @@ function Portfolio(props) {
           <div className="project-description-box">
             <p className="project-description">
               86List is a community for service-industry professionals to talk about the clients that they serve. 
-              This idea surfaced during a conversation with my neighbor, a career, high-end bartender. 
-              He mentioned that while guests can rate restaurants, restaurants can't rate guests. 86List is a place where 
-              servers and bartenders at a specific restaurant/eatery can talk about the clients that they serve and rate them. 
-              The title is a play on words, as '86' is the way to say 'get rid of' or 'without'. So this is geared towards guests they'd rather 86.
+              Built with Ruby on Rails and React.js, 86List requires login authentication and registration in order to 
+              view and interact with co-workers's posts. In future iterations, I want to allow users to create their own
+              accounts and request to be a part of a community with a community leader's approval.
             </p>
           </div>
         </div> { /* END OF CARD CONTAINER */}
@@ -48,11 +47,10 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              Teacher Source is your one stop shop for lesson plans and resources,specifically tailored to you! 
-              Teacher Source is a web app that creates a community of teachers through our dynamic account services. 
-              Inside each account, users have access to My Dashboard, where they can view saved Lesson Plans as well 
-              as track their progress on tutorials and continuing education credits. We securely store your information 
-              in our top-of-the-line free version of MongoDB.
+              Teacher Source is the result of a cross-displine collaboration with a UX team using Agile workflow. 
+              My team of programmers and I took the UX Team's designs and brought them to life. This project uses MongoDB
+              and React.js to create a dashboard for teachers to upload and share lesson planning resources.  The Team
+              and I have determined to continue to work on this project together.
             </p>
           </div>
         </div> { /* END OF CARD CONTAINER */}
@@ -73,11 +71,9 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              At Ferrous-Clad, we strive to help our customers experience their carpe diem. Our newest innovation, 
-              Productive.ly, will help the focused become more focused, the driven to become more driven and the 
-              productive to reach the upper echelons of their potential. Productive.ly is a productivity app with 
-              robust features which include a focus timer, a quick task list, a note storage and a built-in break button 
-              to help ease your tension throughout your busy day. Are you ready to carpe diem?
+              Productive.ly is a React.js app that leverages Airtable API to allow users to stay focused and
+               get work done.  This app has a place for note-taking and task lists.  I want to make this app
+              into a browser extension.
             </p>
           </div>
         </div> { /* END OF CARD CONTAINER */}
@@ -98,8 +94,9 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              Finally! You don't have to invest time in creating your own cover story when you're engage in espionage. 
-              The handy dandy CIA Cover Story application will take the guess work out of your fake future!
+              This is the first site I ever programmed using code. I used Vanilla Javascript as well as made 
+               axios calls to RESTFUL APIs to to create this silly, random person generator, styled to be a 
+              tool for CIA operatives to generate a cover story.
             </p>
           </div>
         </div> { /* END OF CARD CONTAINER */}
