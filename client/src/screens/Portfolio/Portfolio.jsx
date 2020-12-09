@@ -94,7 +94,7 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              This is the first site I ever programmed using code. I used Vanilla Javascript as well as made 
+              This is the first site I ever programmed using code. I used Javascript as well as made 
                axios calls to RESTFUL APIs to to create this silly, random person generator, styled to be a 
               tool for CIA operatives to generate a cover story.
             </p>

@@ -9,7 +9,7 @@ function Header(props) {
     <div id="main-header-container">
       <div id="header-left">
         <Link to="/"><img id="profile-pic" src="/assets/profile.jpg"  alt="the guy you want to hire"/></Link>
-        <p id="header-name">Andrew Ferris</p>
+        <Link id="name-link" to="/"><p id="header-name">Andrew Ferris</p></Link>
       </div>
       <div id="header-right">
         <Dropdown id="nav-dropdown">
@@ -18,7 +18,7 @@ function Header(props) {
             <Dropdown.Menu id='nav-menu'>
               <Dropdown.Item href="/about" className="dropdown-item">ABOUT</Dropdown.Item>
               <Dropdown.Item href="/portfolio" className="dropdown-item">PORTFOLIO</Dropdown.Item>
-              <Dropdown.Item href="/contact" className="dropdown-item">CONTACT</Dropdown.Item>
+              <Dropdown.Item href="/contact" className="dropdown-item" id="below-line">CONTACT</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
       </div>

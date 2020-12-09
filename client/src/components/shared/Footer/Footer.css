@@ -34,10 +34,14 @@
 #gh-logo {
   width: 70px;
   height: auto;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 #li-logo {
   width: 60px;
   height: auto;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 #gh-logo:hover {

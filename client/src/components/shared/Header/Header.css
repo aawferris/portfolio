@@ -1,13 +1,8 @@
 #main-header-container {
   display: flex;
   justify-content: space-between;
-  background: rgb(143, 94, 89);
-  background: linear-gradient(
-    90deg,
-    rgba(143, 94, 89, 1) 0%,
-    rgba(45, 57, 76, 0.8743872549019608) 66%,
-    rgba(56, 194, 187, 0.9472163865546218) 98%
-  );
+  background: #8f5e59;
+  background: linear-gradient(90deg, #8f5e59 0%, #2d394cdf 66%, #38c2bbf1 98%);
   padding: 2vh 0vw;
   height: 100px;
 }
@@ -21,11 +16,16 @@
 }
 
 #header-name {
-  align-self: center;
+  align-content: center;
   margin-left: 1vw;
   font-size: 20px;
   letter-spacing: 0.2vw;
   color: #f7f7f7;
+  margin-top: 4vh;
+}
+
+#name-link {
+  text-decoration: none;
 }
 
 #nav-dropdown {
@@ -45,17 +45,23 @@
   display: flex;
   flex-direction: column;
   outline: none;
+  background-color: #8f5e59;
+  width: fit-content;
 }
 
 .dropdown-item {
   color: #f7f7f7;
-  margin-right: 3vw;
+  text-align: center;
   text-decoration: none;
 }
 
 .dropdown-item:hover {
-  background-color: #38c2bb;
+  background-color: #2d394cdf;
   color: #fff;
+}
+
+#below-line:hover {
+  background-color: #38c2bbf1;
 }
 
 select,
