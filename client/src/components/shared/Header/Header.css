@@ -1,9 +1,10 @@
 #main-header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: linear-gradient(90deg, #8f5e59 0%, #2d394cee 36%);
   padding: 2vh 0vw;
-  height: 100px;
+  height: 10vh;
 }
 
 #header-left {
@@ -59,10 +60,6 @@
   color: #fff;
 }
 
-#below-line:hover {
-  background-color: #38c2bbf1;
-}
-
 select,
 option {
   background: #ffffff;
@@ -72,7 +69,7 @@ option {
   width: 40px;
   height: auto;
   margin-right: 5vw;
-  margin-top: 2vh;
+  filter: invert(100%);
 }
 
 #hamburger-icon:hover {

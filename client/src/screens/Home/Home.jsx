@@ -29,7 +29,7 @@ function Home(props) {
           <h3 id="job-title">jr. software engineer</h3>
         </div>
         <div id="brand-box">
-          <p id="brand-statement">Constant learner dedicated to creating beautiful apps and making sure I'm helping someone else suceed in their mission. </p>
+          <p id="brand-statement">Constant learner dedicated to creating beautiful apps and helping others suceed in their mission. </p>
         </div>
         <div>
         <Link to="/portfolio"><img id="portfolio-link" src="/assets/external-link.png" /></Link>
