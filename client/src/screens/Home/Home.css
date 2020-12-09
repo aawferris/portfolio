@@ -1,0 +1,66 @@
+#home-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(45, 57, 76);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 57, 76, 0.896796218487395) 0%,
+    rgba(45, 57, 76, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 90vh;
+  min-width: 100vw;
+}
+
+#intro-box {
+  display: flex;
+  margin: 15vh 1vw 5vh 1vw;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+
+#name {
+  color: #f7f7f7;
+  font-size: 9vw;
+  text-align: right;
+  max-width: 600px;
+  line-height: 15vh;
+  margin: 1vh 1vw;
+}
+
+#slash {
+  color: #f7f7f7;
+  display: inline-block;
+  -webkit-transform: scale(2, 1); /* Safari and Chrome */
+  -moz-transform: scale(2, 1); /* Firefox */
+  -ms-transform: scale(2, 1); /* IE 9 */
+  -o-transform: scale(2, 1); /* Opera */
+  transform: scale(2, 15); /* W3C */
+}
+
+#job-title {
+  font-size: 3vw;
+  max-width: 400px;
+  color: #f7f7f7;
+}
+
+#brand-statement {
+  color: #f7f7f7;
+  max-width: 65vw;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+#portfolio-link {
+  width: 7vw;
+  height: auto;
+}
+
+#portfolio-link:hover {
+  transform: scale(1.1, 1.1);
+}

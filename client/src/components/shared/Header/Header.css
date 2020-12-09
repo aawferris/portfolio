@@ -1,0 +1,106 @@
+#main-header-container {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(143, 94, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(143, 94, 89, 1) 0%,
+    rgba(45, 57, 76, 0.8743872549019608) 66%,
+    rgba(56, 194, 187, 0.9472163865546218) 98%
+  );
+  padding: 2vh 0vw;
+  height: 100px;
+}
+
+#header-left {
+  display: flex;
+}
+
+#header-right {
+  margin-top: 1vh;
+}
+
+#header-name {
+  align-self: center;
+  margin-left: 1vw;
+  font-size: 20px;
+  letter-spacing: 0.2vw;
+  color: #f7f7f7;
+}
+
+#nav-dropdown {
+  display: flex;
+  align-self: center;
+  padding-right: 5%;
+}
+
+#nav-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+
+#nav-menu {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+.dropdown-item {
+  color: #f7f7f7;
+  margin-right: 3vw;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #38c2bb;
+  color: #fff;
+}
+
+select,
+option {
+  background: #ffffff;
+}
+
+#hamburger-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 5vw;
+  margin-top: 2vh;
+}
+
+#hamburger-icon:hover {
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 5s ease-in-out infinite;
+  -moz-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#profile-pic {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 2vw;
+}
+
+#profile-pic:hover {
+  transform: scale(1.1, 1.1);
+}

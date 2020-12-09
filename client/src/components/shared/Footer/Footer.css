@@ -1,0 +1,48 @@
+#footer-main-container {
+  background: rgb(143, 94, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 194, 187, 0.9472163865546218) 0%,
+    rgba(45, 57, 76, 0.8743872549019608) 66%,
+    rgba(143, 94, 89, 1) 98%
+  );
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text {
+  font-size: 10px;
+  color: #b1a89c;
+}
+
+#footer-left {
+  margin-left: 2vw;
+}
+
+#footer-right {
+  margin-right: 4vw;
+  display: flex;
+  width: 8vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gh-logo {
+  width: 70px;
+  height: auto;
+}
+#li-logo {
+  width: 60px;
+  height: auto;
+}
+
+#gh-logo:hover {
+  transform: scale(1.1, 1.1);
+}
+#li-logo:hover {
+  transform: scale(1.1, 1.1);
+}
