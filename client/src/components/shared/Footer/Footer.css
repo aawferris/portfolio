@@ -1,8 +1,6 @@
 #footer-main-container {
-  background: rgb(143, 94, 89);
   background: linear-gradient(
     90deg,
-    rgba(56, 194, 187, 0.9472163865546218) 0%,
     rgba(45, 57, 76, 0.8743872549019608) 66%,
     rgba(143, 94, 89, 1) 98%
   );

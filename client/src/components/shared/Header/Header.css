@@ -1,8 +1,7 @@
 #main-header-container {
   display: flex;
   justify-content: space-between;
-  background: #8f5e59;
-  background: linear-gradient(90deg, #8f5e59 0%, #2d394cdf 66%, #38c2bbf1 98%);
+  background: linear-gradient(90deg, #8f5e59 0%, #2d394cee 36%);
   padding: 2vh 0vw;
   height: 100px;
 }
