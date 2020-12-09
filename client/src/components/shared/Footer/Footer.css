@@ -1,0 +1,46 @@
+#footer-main-container {
+  background: linear-gradient(90deg, #2d394cee 66%, #8f5e59 98%);
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text {
+  font-size: 10px;
+  color: #b1a89c;
+}
+
+#footer-left {
+  margin-left: 2vw;
+}
+
+#footer-right {
+  margin-right: 4vw;
+  display: flex;
+  width: 8vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gh-logo {
+  width: 70px;
+  height: auto;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+#li-logo {
+  width: 60px;
+  height: auto;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+#gh-logo:hover {
+  transform: scale(1.1, 1.1);
+}
+#li-logo:hover {
+  transform: scale(1.1, 1.1);
+}

@@ -1,0 +1,93 @@
+#about-main-container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(45, 57, 76);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 57, 76, 0.896796218487395) 0%,
+    rgba(45, 57, 76, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 90vh;
+  min-width: 100vw;
+  color: #f7f7f7;
+}
+
+#about-sub-container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#about-title {
+  font-size: 100px;
+  text-align-last: center;
+}
+
+#about-card-box {
+  display: grid;
+  grid-template-areas:
+    "image brand"
+    "image brand"
+    "image hobby"
+    "image hobby";
+}
+
+#image-box {
+  grid-area: image;
+}
+
+#about-picture {
+  width: 550px;
+  height: auto;
+  border-radius: 50%;
+  bottom: 16vh;
+  /* margin-top: 5vh; */
+}
+
+#brand-statement {
+  grid-area: brand;
+  margin-left: 4vw;
+  text-align: justify;
+  line-height: 3vh;
+  margin-bottom: 0vh;
+}
+
+#hobby-box {
+  grid-area: hobby;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  margin-bottom: 5vh;
+  line-height: 2.2vh;
+}
+
+#hobby-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 25vw;
+  margin-bottom: -1vh;
+}
+
+.about-bullet {
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  width: auto;
+  height: 70px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  margin-right: 2vw;
+}
+
+.bullet-title {
+  text-align: left;
+}
+
+.bullet-info {
+  text-align: left;
+}

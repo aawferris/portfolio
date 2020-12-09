@@ -1,0 +1,89 @@
+#main-portfolio-container {
+  display: flex;
+  justify-content: center;
+  background: rgb(45, 57, 76);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 57, 76, 0.896796218487395) 0%,
+    rgba(45, 57, 76, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 90vh;
+  min-width: 100vw;
+}
+
+#card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4vh 0;
+}
+
+.card {
+  display: grid;
+  grid-template-areas:
+    "top-left top-right"
+    "image image"
+    "image image"
+    "description description";
+  text-align: center;
+  width: 80vw;
+  margin: 2vh 0;
+  box-shadow: 2px 4px 8px 4px #38c2bb;
+}
+
+.top-left {
+  grid-area: top-left;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1vh;
+  text-align: left;
+  color: #b1a89c;
+  padding-left: 5vw;
+  margin-bottom: 1vh;
+}
+
+.top-right {
+  grid-area: top-right;
+  display: flex;
+  align-items: center;
+  width: 10vw;
+  justify-content: space-around;
+  padding-left: 45vw;
+}
+
+.deploy-link {
+  width: 50px;
+  height: auto;
+}
+
+.repo-link {
+  width: 50px;
+  height: auto;
+}
+
+.deploy-link:hover,
+.repo-link:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.screenshot-box {
+  grid-area: image;
+}
+
+.screenshot {
+  width: 70vw;
+  height: auto;
+}
+
+.project-description-box {
+  grid-area: description;
+  max-width: 60vw;
+  margin-left: 10vw;
+}
+
+.project-description {
+  color: #b1a89c;
+  text-align: center;
+}
