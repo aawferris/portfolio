@@ -25,7 +25,7 @@ function Portfolio(props) {
             <p className="project-description">
               86List is a community for service-industry professionals to talk about the clients that they serve. 
               Built with Ruby on Rails and React.js, 86List requires login authentication and registration in order to 
-              view and interact with co-workers's posts. In future iterations, I want to allow users to create their own
+              view and interact with co-workers' posts. In future iterations, I want to allow users to create their own
               accounts and request to be a part of a community with a community leader's approval.
             </p>
           </div>
@@ -47,7 +47,7 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              Teacher Source is the result of a cross-displine collaboration with a UX team using Agile workflow. 
+              Teacher Source is the result of a cross-discipline collaboration with a UX team using Agile workflow. 
               My team of programmers and I took the UX Team's designs and brought them to life. This project uses MongoDB
               and React.js to create a dashboard for teachers to upload and share lesson planning resources.  The Team
               and I have determined to continue to work on this project together.
@@ -71,7 +71,7 @@ function Portfolio(props) {
           </div>
           <div className="project-description-box">
             <p className="project-description">
-              Productive.ly is a React.js app that leverages Airtable API to allow users to stay focused and
+              Productive.ly is a React.js app that leverages AirTable API to allow users to stay focused and
                get work done.  This app has a place for note-taking and task lists.  I want to make this app
               into a browser extension.
             </p>

@@ -50,7 +50,7 @@
   align-items: center;
   width: 10vw;
   justify-content: space-around;
-  padding-left: 45vw;
+  padding-left: 30vw;
 }
 
 .deploy-link {
@@ -86,4 +86,54 @@
 .project-description {
   color: #b1a89c;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .deploy-link {
+    width: 40px;
+    height: auto;
+  }
+
+  .repo-link {
+    width: 50px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .top-right {
+    padding-left: 20vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-right {
+    padding-left: 10vw;
+  }
+
+  .deploy-link {
+    width: 30px;
+    height: auto;
+  }
+
+  .repo-link {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top-right {
+    padding-left: 0vw;
+  }
+
+  .deploy-link {
+    width: 30px;
+    height: auto;
+  }
+
+  .repo-link {
+    width: 40px;
+    height: auto;
+  }
 }
