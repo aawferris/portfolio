@@ -44,3 +44,39 @@
 #li-logo:hover {
   transform: scale(1.1, 1.1);
 }
+
+@media screen and (max-width: 1200px) {
+  #footer-right {
+    margin-right: 7vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #gh-logo {
+    width: 60px;
+    height: auto;
+  }
+  #li-logo {
+    width: 50px;
+    height: auto;
+  }
+
+  #footer-right {
+    margin-right: 9vw;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #gh-logo {
+    width: 50px;
+    height: auto;
+  }
+  #li-logo {
+    width: 40px;
+    height: auto;
+  }
+
+  #footer-right {
+    margin-right: 14vw;
+  }
+}
