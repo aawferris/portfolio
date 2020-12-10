@@ -26,14 +26,14 @@ function About(props) {
                 <img src="/assets/language.png" className="bullet" alt="language icon"/> 
                 <div className="bullet-descriptions">
                   <h4 className="bullet-title">Language Learning</h4>
-                  <p className="bullet-info">English & Spanish (fluent), German (elementary), Portuguese & Galician (can read and speak some), Arabic & Greek (can read and write the script and speak a bit).</p>
+                  <p className="bullet-info">English & Spanish (fluent), German (elementary), Portuguese & Galician (able to read, limited speaking), Arabic & Greek (able to read and write the script, limited speaking).</p>
                 </div>
               </li>
               <li className="about-bullet">
                 <img src="/assets/dumbbell.png" className="bullet" alt="dumbbell icon"/> 
                 <div className="bullet-descriptions">
                   <h4 className="bullet-title">Exercise</h4>
-                  <p className="bullet-info">I enjoy outdoor activites and lifting wieghts. I have played and coached soccer in High School and Middle School.</p>
+                  <p className="bullet-info">I enjoy outdoor activities and lifting weights. I have played and coached soccer in High School and Middle School.</p>
                 </div>
               </li>
               <li className="about-bullet">
