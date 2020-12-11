@@ -14,7 +14,7 @@ function Home(props) {
         <div id="intro-box">
           <h1 id="name">Andrew Ferris</h1>
           <p id="slash">|</p>
-          <h3 id="job-title">jr. software engineer</h3>
+          <h3 id="job-title">software engineer</h3>
         </div>
         <div id="brand-box">
           <p id="intro-brand-statement">Constant learner dedicated to creating beautiful apps and helping others succeed in their mission. </p>
