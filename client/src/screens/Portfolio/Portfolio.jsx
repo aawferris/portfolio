@@ -50,7 +50,7 @@ function Portfolio(props) {
               Teacher Source is the result of a cross-discipline collaboration with a UX team using Agile workflow. 
               My team of programmers and I took the UX Team's designs and brought them to life. This project uses MongoDB
               and React.js to create a dashboard for teachers to upload and share lesson planning resources.  The Team
-              and I have determined to continue to work on this project together.
+              and I have decided to continue to work on this project together.
             </p>
           </div>
         </div> { /* END OF CARD CONTAINER */}
@@ -95,7 +95,7 @@ function Portfolio(props) {
           <div className="project-description-box">
             <p className="project-description">
               This is the first site I ever programmed using code. I used Javascript as well as made 
-               axios calls to RESTFUL APIs to to create this silly, random person generator, styled to be a 
+               axios calls to RESTFUL APIs to to create this silly random person generator, styled to be a 
               tool for CIA operatives to generate a cover story.
             </p>
           </div>
