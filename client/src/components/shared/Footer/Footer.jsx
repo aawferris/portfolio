@@ -8,8 +8,9 @@ function Footer(props) {
         <p id="footer-text">created by Andrew Ferris</p>
       </div>
       <div id="footer-right">
+        <a href="https://drive.google.com/file/d/12bauG3wNYdQMGLUAQIWgN2VTtm3FwoS5/view?usp=sharing" alt="andrew'sresume" target="_blank" rel="noreferrer"><img id="resume-logo" src="/assets/document.png"/></a>
         <a href="https://github.com/aawferris/portfolio" alt="andrew's github profile" target="_blank" rel="noreferrer"><img id="gh-logo" src="/assets/github-logo.png" /></a>
-        <a href="https://www.linkedin.com/in/andrew-ferris-8929401aa/" alt="andrew's linkedin profile" target="_blank" rel="noreferrer"><img id="li-logo" src="/assets/linkedin.png"/></a>
+        <a href="https://www.linkedin.com/in/andrew-ferris-8929401aa/" alt="andrew's linkedin profile" target="_blank" rel="noreferrer"><img id="li-logo" src="/assets/linkedin.png" /></a>
       </div>
     </div>
   );

@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: linear-gradient(90deg, #8f5e59 0%, #2d394cee 36%); */
-  background: transparent;
+  background: linear-gradient(90deg, #8f5e59 0%, #2d394cee 36%);
   padding: 2vh 0vw;
   height: 10vh;
 }
