@@ -20,7 +20,7 @@ function Home(props) {
           <p id="intro-brand-statement">Constant learner dedicated to creating beautiful apps and helping others succeed in their mission. </p>
         </div>
         <div>
-        <Link to="/portfolio"><img id="portfolio-link" src="/assets/external-link.png" /></Link>
+        <Link to="/details"><img id="portfolio-link" src="/assets/external-link.png" /></Link>
         <p id="link-description">PORTFOLIO</p>
         </div>
       </div>

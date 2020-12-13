@@ -13,9 +13,9 @@ function Portfolio(props) {
               <p className="title">86List</p>
               <p className="languages">React.js, Ruby on Rails, Postgresql, CSS</p>
             </div>
-            <div className="top-right">
-              <a href="https://86list.netlify.app/" target="_blank" rel="noopener"><img src="/assets/internet.png" className="deploy-link" /></a>
-              <a href="https://github.com/aawferris/86list" target="_blank" rel="noopener"><img src="/assets/github-logo.png" className="repo-link"/></a>
+          <div className="top-right">
+              <a href="https://86list.netlify.app/" alt="deployed app" target="_blank" rel="noopener"><img src="/assets/internet.png" className="deploy-link" /></a>
+              <a href="https://github.com/aawferris/86list" alt="Git Hub repo" target="_blank" rel="noopener"><img src="/assets/github-logo.png" className="repo-link"/></a>
             </div>
           {/* </div> */}
           <div className="screenshot-box">
