@@ -17,8 +17,8 @@ function DetailsProject(props) {
               Built with Ruby on Rails and React.js, 86List requires login authentication and registration in order to 
               view and interact with co-workers' posts. In future iterations, I want to allow users to create their own
               accounts and request to be a part of a community with a community leader's approval.</p>
-            <a className="project-link" href="https://86list.netlify.app/" alt="deployed app" target="_blank" rel="noopener">Repo</a>
-            <a className="project-link" href="https://github.com/aawferris/86list" alt="Git Hub repo" target="_blank" rel="noopener">Site</a>
+            <a className="project-link" href="https://86list.netlify.app/" alt="deployed app" target="_blank" rel="noopener">Site</a>
+            <a className="project-link" href="https://github.com/aawferris/86list" alt="Git Hub repo" target="_blank" rel="noopener">Repo</a>
           </div>
         </div>
         <div>
@@ -36,8 +36,8 @@ function DetailsProject(props) {
              My team of programmers and I took the UX Team's designs and brought them to life. This project uses MongoDB
             and React.js to create a dashboard for teachers to upload and share lesson planning resources.  The Team
               and I have decided to continue to work on this project together.</p>
-              <a className="project-link" href="https://teacher-source.netlify.app/" alt="deployed app" target="_blank" rel="noopener">Repo</a>
-              <a className="project-link" href="https://github.com/aawferris/teachersource" alt="Git Hub repo" target="_blank" rel="noopener">Site</a>
+              <a className="project-link" href="https://teacher-source.netlify.app/" alt="deployed app" target="_blank" rel="noopener">Site</a>
+              <a className="project-link" href="https://github.com/aawferris/teachersource" alt="Git Hub repo" target="_blank" rel="noopener">Repo</a>
           </div>
         </div>
       </div>
@@ -52,8 +52,8 @@ function DetailsProject(props) {
             <p className="back-description">Productive.ly is a React.js app that leverages AirTable API to allow users to stay focused and
             get work done.  This app has a place for note-taking and task lists.  I want to make this app
               into a browser extension.</p>
-              <a className="project-link" href="https://productively.netlify.app/" alt="deployed app" target="_blank" rel="noopener">Repo</a>
-              <a className="project-link" href="https://github.com/aawferris/productive.ly" alt="Git Hub repo" target="_blank" rel="noopener">Site</a>
+              <a className="project-link" href="https://productively.netlify.app/" alt="deployed app" target="_blank" rel="noopener">Site</a>
+              <a className="project-link" href="https://github.com/aawferris/productive.ly" alt="Git Hub repo" target="_blank" rel="noopener">Repo</a>
           </div>
         </div>
       </div>
@@ -68,8 +68,8 @@ function DetailsProject(props) {
             <p className="back-description">This is the first site I ever programmed using code. I used Javascript as well as made 
             axios calls to RESTFUL APIs to to create this silly random person generator, styled to be a 
               tool for CIA operatives to generate a cover story.</p>
-              <a className="project-link" href="https://aawferris.github.io/CIA-cover-story/index.html" alt="deployed app" target="_blank" rel="noopener">Repo</a>
-              <a className="project-link" href="https://github.com/aawferris/CIA-cover-story" alt="Git Hub repo" target="_blank" rel="noopener">Site</a>
+              <a className="project-link" href="https://aawferris.github.io/CIA-cover-story/index.html" alt="deployed app" target="_blank" rel="noopener">Site</a>
+              <a className="project-link" href="https://github.com/aawferris/CIA-cover-story" alt="Git Hub repo" target="_blank" rel="noopener">Repo</a>
           </div>
         </div>
       </div>
