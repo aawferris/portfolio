@@ -66,24 +66,23 @@
 }
 
 #video {
-  height: auto;
-  width: 100%;
+  height: 1080px;
+  width: 1920px;
+  min-width: 1920px;
+  min-height: 1080px;
   float: left;
   top: 0;
   position: fixed;
-  background-size: 100vw auto;
+  background-size: cover;
   background-position: center;
-  min-height: 80vh;
-  min-width: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   z-index: -1;
 }
 
 @media screen and (max-width: 1450px) {
-  #video {
-    height: 100vh;
-    width: auto;
-  }
-
   #name {
     font-size: 9vw;
     text-align: right;
