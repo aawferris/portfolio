@@ -106,3 +106,20 @@ option {
 #profile-pic:hover {
   transform: scale(1.1, 1.1);
 }
+
+@media screen and (max-width: 775px) {
+  #profile-pic {
+    width: 80px;
+    height: auto;
+  }
+  #nav-menu {
+    margin-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #profile-pic {
+    width: 60px;
+    height: auto;
+  }
+}

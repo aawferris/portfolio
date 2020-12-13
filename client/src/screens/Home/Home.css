@@ -39,7 +39,7 @@
   color: #f7f7f7;
 }
 
-#brand-statement {
+#intro-brand-statement {
   color: #f7f7f7;
   max-width: 65vw;
   text-align: center;
@@ -63,4 +63,53 @@
   text-align: center;
   margin-bottom: 5vh;
   font-size: 11px;
+}
+
+#video {
+  height: 1080px;
+  width: 1920px;
+  min-width: 1920px;
+  min-height: 1080px;
+  float: left;
+  top: 0;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1450px) {
+  #name {
+    font-size: 9vw;
+    text-align: right;
+    max-width: 600px;
+    line-height: 13vh;
+    margin: 1vh 1vw;
+  }
+
+  #slash {
+    margin: 0 2vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #name {
+    line-height: 11vh;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #name {
+    line-height: 8vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #name {
+    line-height: 6vh;
+  }
 }
