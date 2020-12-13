@@ -7,11 +7,10 @@
     rgba(45, 57, 76, 0.896796218487395) 0%,
     rgba(45, 57, 76, 1) 100%
   );
+  position: relative;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
-  min-height: 90vh;
-  min-width: 100vw;
+  z-index: -1;
 }
 
 #card-container {
