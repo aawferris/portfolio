@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Layout from '../../components/shared/Layout/Layout'
 import './About.css'
 
 function About(props) {
   return (
+    <Layout>
     <div id="about-main-container">
       <div id="about-sub-container">
         <h1 id="about-title">ABOUT ME</h1>
@@ -54,7 +55,8 @@ function About(props) {
           </div>
           </div>
       </div>
-    </div>
+      </div>
+      </Layout>
   );
 }
 

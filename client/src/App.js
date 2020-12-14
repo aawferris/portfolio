@@ -11,15 +11,13 @@ import DetailsProject from "./screens/DetailsProject/DetailsProject";
 function App() {
   return (
     <div className="App">
-      <Layout>
-        <Switch>
-          <Route path="/contact" component={Contact} />
-          <Route path="/about" component={About} />
-          <Route path="/details" component={DetailsProject} />
-          {/* <Route path="/portfolio" component={Portfolio} /> */}
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Layout>
+      <Switch>
+        <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
+        <Route path="/details" component={DetailsProject} />
+        {/* <Route path="/portfolio" component={Portfolio} /> */}
+        <Route exact path="/" component={Home} />
+      </Switch>
     </div>
   );
 }

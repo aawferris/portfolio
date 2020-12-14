@@ -2,11 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
 
-import './Header.css'
+import './MainHeader.css'
 
-function Header(props) {
+function MainHeader(props) {
   return (
-    <div id="main-header-container">
+    <div id="main-alt-header-container">
       <div id="header-left">
         <Link to="/"><img id="profile-pic" src="/assets/profile.jpg"  alt="the guy you want to hire"/></Link>
         <Link id="name-link" to="/"><p id="header-name">Andrew Ferris</p></Link>
@@ -26,4 +26,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default MainHeader;
