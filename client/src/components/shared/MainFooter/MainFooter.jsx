@@ -3,7 +3,7 @@ import './MainFooter.css'
 
 function MainFooter(props) {
   return (
-    <div id="footer-main-container">
+    <div id="footer-alt-main-container">
       <div id="footer-left">
         <p id="footer-text">created by Andrew Ferris</p>
       </div>

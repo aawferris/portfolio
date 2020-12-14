@@ -6,7 +6,7 @@ import './MainHeader.css'
 
 function MainHeader(props) {
   return (
-    <div id="main-header-container">
+    <div id="main-alt-header-container">
       <div id="header-left">
         <Link to="/"><img id="profile-pic" src="/assets/profile.jpg"  alt="the guy you want to hire"/></Link>
         <Link id="name-link" to="/"><p id="header-name">Andrew Ferris</p></Link>

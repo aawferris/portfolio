@@ -1,6 +1,5 @@
 #footer-main-container {
   background: linear-gradient(90deg, #2d394cee 66%, #8f5e59 98%);
-  /* background: transparent; */
   display: flex;
   position: absolute;
   height: 100px;
