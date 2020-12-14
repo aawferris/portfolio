@@ -2,9 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
 
-import './Header.css'
+import './MainHeader.css'
 
-function Header(props) {
+function MainHeader(props) {
   return (
     <div id="main-header-container">
       <div id="header-left">
@@ -26,4 +26,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default MainHeader;

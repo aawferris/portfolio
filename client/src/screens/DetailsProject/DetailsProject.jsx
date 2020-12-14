@@ -1,9 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import Layout from '../../components/shared/Layout/Layout'
 import './DetailsProject.css'
 
 function DetailsProject(props) {
   return (
+    <Layout>
     <div className='projects-container'>
       <div class="flip-card">
         <div class="flip-card-inner">
@@ -73,7 +74,8 @@ function DetailsProject(props) {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </Layout>
   );
 }
 

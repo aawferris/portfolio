@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../../components/shared/Layout/Layout'
 import './Contact.css'
 
 export default class Contact extends React.Component {
@@ -13,6 +14,7 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     return (
+      <Layout>
       <div>
         <div className='contact'>
           <h2 id='proj-name'>CONTACT</h2>
@@ -37,6 +39,7 @@ export default class Contact extends React.Component {
           </section>
         </div>
     </div>
+      </Layout>
     );
   }
 
