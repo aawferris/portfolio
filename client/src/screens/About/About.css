@@ -20,74 +20,112 @@
   margin: 0 auto;
 }
 
-#about-title {
-  font-size: 100px;
-  text-align-last: center;
-}
-
 #about-card-box {
   display: grid;
   grid-template-areas:
-    "image brand"
-    "image brand"
-    "image hobby"
-    "image hobby";
+    "image image"
+    "brand brand"
+    "hobby hobby";
+  margin-top: 5vh;
 }
 
 #image-box {
   grid-area: image;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
 }
 
 #about-picture {
-  width: 550px;
+  width: 450px;
   height: auto;
   border-radius: 50%;
-  bottom: 16vh;
-  /* margin-top: 5vh; */
 }
 
 #brand-statement {
   grid-area: brand;
-  margin-left: 4vw;
-  text-align: justify;
-  line-height: 3vh;
-  margin-bottom: 0vh;
+  text-align: center;
+  line-height: 2.5vh;
+  margin-bottom: 2vh;
+  max-width: 60vw;
+  margin: 0 auto;
 }
 
 #hobby-box {
   grid-area: hobby;
   display: flex;
   flex-direction: column;
-  margin-left: 2vw;
   margin-bottom: 5vh;
   line-height: 2.2vh;
+  margin: 0 auto;
 }
 
 #hobby-title {
   font-size: 36px;
   font-weight: 700;
-  text-align: left;
-  margin-left: 25vw;
-  margin-bottom: -1vh;
+  text-align: center;
 }
 
-.about-bullet {
+#about-hobby-details {
   display: flex;
-  align-items: center;
 }
 
-.bullet {
-  width: auto;
-  height: 70px;
-  filter: invert(100%);
-  -webkit-filter: invert(100%);
-  margin-right: 2vw;
+/* THIS HANDLES THE HOBBY CARDS */
+
+.about-flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 2vh 2vw 4vh 2vw;
+  perspective: 1000px;
 }
 
-.bullet-title {
-  text-align: left;
+/* This container is needed to position the front and back side */
+.about-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
-.bullet-info {
-  text-align: left;
+.about-image {
+  width: 200px;
+  height: auto;
+  border-radius: 25px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.about-flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.about-flip-card-front,
+.about-flip-card-back {
+  position: absolute;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.about-flip-card-front {
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 25px;
+  padding: 2px;
+  box-shadow: 2px 6px 8px 4px black;
+}
+
+/* Style the back side */
+.about-flip-card-back {
+  background-color: #8f5e59;
+  color: #f7f7f7;
+  transform: rotateY(180deg);
+  padding: 1vh 1vw;
+  border-radius: 25px;
 }
