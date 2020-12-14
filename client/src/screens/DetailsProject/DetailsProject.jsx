@@ -6,12 +6,12 @@ function DetailsProject(props) {
   return (
     <Layout>
     <div className='projects-container'>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
             <img className="image" src="/assets/86list.png" alt="86list site" />
           </div>
-          <div class="flip-card-back">
+          <div className="flip-card-back">
             <h1 className="back-title">86List</h1>
             <p className="back-tools">React.js, Ruby on Rails, Postgresql, CSS</p>
             <p className="back-description">86List is a community for service-industry professionals to talk about the clients that they serve. 
@@ -25,12 +25,12 @@ function DetailsProject(props) {
         <div>
         </div>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
             <img className="image" src="/assets/teachersource.png" alt="Teacher Source site" />
           </div>
-          <div class="flip-card-back">
+          <div className="flip-card-back">
             <h1 className="back-title">Teacher Source</h1>
             <p className="back-tools">React.js, Express.js, MongoDB, CSS</p>
             <p className="back-description">Teacher Source is the result of a cross-discipline collaboration with a UX team using Agile workflow.  
@@ -42,12 +42,12 @@ function DetailsProject(props) {
           </div>
         </div>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
             <img className="image" src="/assets/productively.png" alt="Productive.ly site" />
           </div>
-          <div class="flip-card-back">
+          <div className="flip-card-back">
             <h1 className="back-title">Productive.ly</h1>
             <p className="back-tools">React.js, Express.js, CSS</p>
             <p className="back-description">Productive.ly is a React.js app that leverages AirTable API to allow users to stay focused and
@@ -58,12 +58,12 @@ function DetailsProject(props) {
           </div>
         </div>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
             <img className="image" src="/assets/cia.png" alt="CIA Cover Story Generator site" />
           </div>
-          <div class="flip-card-back">
+          <div className="flip-card-back">
             <h1 className="back-title">CIA Cover Story Generator</h1>
             <p className="back-tools">Vanilla Javascript, CSS, HTML5</p>
             <p className="back-description">This is the first site I ever programmed using code. I used Javascript as well as made 
