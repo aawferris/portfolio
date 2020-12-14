@@ -19,15 +19,16 @@ function About(props) {
                     <div className="about-flip-card-back" id="profile-flip-card-back">
                       <h1 className="about-back-title" id="profile-back-title">About Me</h1>
                       <p className="about-back-description" id="profile-back-description">Constant learner and leader in Education, pivoting to full stack development and passionate about organizational health. I believe that every person has and can achieve their life’s mission. I do this by leveraging my passion and experience in communication, education, and organizational health through a systematic and inclusive process to find and efficiently execute the best solution to move the mission forward. I create beautiful, user-friendly, and pragmatic apps and make sure I am always helping someone else succeed in their mission. I am making the transition to the tech industry because I believe it is the medium to see this mission through.</p>
-                    </div>
+                      <a className="project-link" href="https://drive.google.com/file/d/12bauG3wNYdQMGLUAQIWgN2VTtm3FwoS5/view?usp=sharing" alt="Andrew's resume" target="_blank" rel="noreferrer">Résumé</a>  
+                  </div>
                   </div>
                 <div>
               </div>
             </div>
           </div>
-          <div id="hobby-box">
-              <p id="hobby-title">Hobbies</p>
-              <div id="about-hobby-details">
+        <div id="hobby-box">
+          <p id="hobby-title">Hobbies</p>
+          <div id="about-hobby-details">
                 
               <div className="about-flip-card">
                 <div className="flip-card-inner">

@@ -49,13 +49,12 @@
   grid-area: hobby;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5vh;
   line-height: 2.2vh;
   margin: 0 auto 4vh auto;
 }
 
 #hobby-title {
-  font-size: 36px;
+  font-size: 5vh;
   font-weight: 700;
   text-align: center;
 }
@@ -75,8 +74,8 @@
 }
 
 #profile-flip-card {
-  width: 450px;
-  height: 450px;
+  width: 25vw;
+  height: 25vw;
   border-radius: 50%;
 }
 
@@ -91,13 +90,14 @@
 }
 
 .about-image {
-  width: 250px;
+  width: 240px;
+  padding: 3px;
   height: auto;
-  border-radius: 25px;
+  border-radius: 5%;
 }
 
 #about-profile {
-  width: 450px;
+  width: 25vw;
   height: auto;
   border-radius: 50%;
 }
@@ -111,7 +111,7 @@
 .about-flip-card-front,
 .about-flip-card-back {
   position: absolute;
-  border-radius: 25px;
+  border-radius: 5%;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
@@ -122,8 +122,7 @@
 .about-flip-card-front {
   background-color: #f7f7f7;
   color: black;
-  border-radius: 25px;
-  padding: 2px;
+  border-radius: 5%;
   box-shadow: 2px 6px 8px 4px black;
 }
 
@@ -137,7 +136,7 @@
   color: #f7f7f7;
   transform: rotateY(180deg);
   padding: 0.5vh 0.5vw;
-  border-radius: 25px;
+  border-radius: 5%;
 }
 
 #profile-flip-card-back {
@@ -145,15 +144,103 @@
 }
 
 #profile-back-title {
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 
 .about-back-description {
-  font-size: 12px;
-  line-height: 2vh;
+  font-size: 0.7vw;
 }
 
 #profile-back-description {
   line-height: normal;
   padding: 0 1vh;
+}
+
+@media screen and (max-width: 1650px) {
+  .about-flip-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-image {
+    width: 190px;
+  }
+
+  .about-back-description {
+    line-height: 1.5vh;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .about-flip-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-image {
+    width: 140px;
+  }
+
+  .about-back-description {
+    line-height: 1vh;
+  }
+
+  .about-back-title {
+    font-size: 3vh;
+  }
+
+  #profile-back-title {
+    margin-top: 10vh;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-flip-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-image {
+    width: 90px;
+  }
+
+  .about-back-title {
+    font-size: 2vh;
+  }
+
+  #profile-back-title {
+    margin-top: 2vh;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #about-hobby-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-flip-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-image {
+    width: 90px;
+  }
+
+  .about-back-description {
+    line-height: 0.75vh;
+    font-size: 1.25vw;
+  }
+
+  .about-back-title {
+    font-size: 2vh;
+  }
+
+  #profile-back-title {
+    margin-top: 1vh;
+    font-size: 3vh;
+  }
 }
