@@ -8,17 +8,29 @@ function About(props) {
     <Layout>
     <div id="about-main-container">
       <div id="about-sub-container">
-        {/* <h1 id="about-title">ABOUT ME</h1> */}
         <div id="about-card-box">
+            
           <div id="image-box">
-            <img src="/assets/profile.jpg"  alt="Andrew Ferris" id="about-picture" />
+              <div className="about-flip-card" id="profile-flip-card">
+                <div className="flip-card-inner">
+                  <div className="about-flip-card-front" id="profile-flip-card-front">
+                    <img id="about-profile" src="/assets/profile.jpg" alt="Andy in Medocino, CA" />
+                  </div>
+                    <div className="about-flip-card-back" id="profile-flip-card-back">
+                      <h1 className="about-back-title" id="profile-back-title">About Me</h1>
+                      <p className="about-back-description" id="profile-back-description">Constant learner and leader in Education, pivoting to full stack development and passionate about organizational health. I believe that every person has and can achieve their life’s mission. I do this by leveraging my passion and experience in communication, education, and organizational health through a systematic and inclusive process to find and efficiently execute the best solution to move the mission forward. I create beautiful, user-friendly, and pragmatic apps and make sure I am always helping someone else succeed in their mission. I am making the transition to the tech industry because I believe it is the medium to see this mission through.</p>
+                    </div>
+                  </div>
+                <div>
+              </div>
+            </div>
           </div>
-          <p id="brand-statement">Constant learner and leader in Education, pivoting to full stack development and passionate about organizational health. I believe that every person has and can achieve their life’s mission. I do this by leveraging my passion and experience in communication, education, and organizational health through a systematic and inclusive process to find and efficiently execute the best solution to move the mission forward. I create beautiful, user-friendly, and pragmatic apps and make sure I am always helping someone else succeed in their mission. I am making the transition to the tech industry because I believe it is the medium to see this mission through.</p>
           <div id="hobby-box">
               <p id="hobby-title">Hobbies</p>
-            <div id="about-hobby-details">
+              <div id="about-hobby-details">
+                
               <div className="about-flip-card">
-                <div className="about-flip-card-inner">
+                <div className="flip-card-inner">
                   <div className="about-flip-card-front">
                     <img className="about-image" src="/assets/guitar-icon.png" alt="guitar icon" />
                   </div>
@@ -32,7 +44,7 @@ function About(props) {
               </div>
 
               <div className="about-flip-card">
-                <div className="about-flip-card-inner">
+                <div className="flip-card-inner">
                   <div className="about-flip-card-front">
                     <img className="about-image" src="/assets/language.png" alt="language icon" />
                   </div>
@@ -46,7 +58,7 @@ function About(props) {
               </div>
 
               <div className="about-flip-card">
-                <div className="about-flip-card-inner">
+                <div className="flip-card-inner">
                   <div className="about-flip-card-front">
                     <img className="about-image" src="/assets/dumbbell.png" alt="language icon" />
                   </div>
@@ -60,7 +72,7 @@ function About(props) {
               </div>
 
               <div className="about-flip-card">
-                <div className="about-flip-card-inner">
+                <div className="flip-card-inner">
                   <div className="about-flip-card-front">
                     <img className="about-image" src="/assets/cooking.png" alt="cooking icon" />
                   </div>
@@ -74,7 +86,7 @@ function About(props) {
               </div>
 
               <div className="about-flip-card">
-                <div className="about-flip-card-inner">
+                <div className="flip-card-inner">
                   <div className="about-flip-card-front">
                     <img className="about-image" src="/assets/travel.png" alt="travel icon" />
                   </div>

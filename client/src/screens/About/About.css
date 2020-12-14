@@ -26,20 +26,14 @@
     "image image"
     "brand brand"
     "hobby hobby";
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 
 #image-box {
   grid-area: image;
   display: flex;
   justify-content: center;
-  margin-bottom: 2vh;
-}
-
-#about-picture {
-  width: 450px;
-  height: auto;
-  border-radius: 50%;
+  margin-bottom: 3vh;
 }
 
 #brand-statement {
@@ -57,7 +51,7 @@
   flex-direction: column;
   margin-bottom: 5vh;
   line-height: 2.2vh;
-  margin: 0 auto;
+  margin: 0 auto 4vh auto;
 }
 
 #hobby-title {
@@ -74,14 +68,20 @@
 
 .about-flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
-  margin: 2vh 2vw 4vh 2vw;
+  width: 250px;
+  height: 250px;
+  margin: 2vh 2vw;
   perspective: 1000px;
 }
 
+#profile-flip-card {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+
 /* This container is needed to position the front and back side */
-.about-flip-card-inner {
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -91,9 +91,15 @@
 }
 
 .about-image {
-  width: 200px;
+  width: 250px;
   height: auto;
   border-radius: 25px;
+}
+
+#about-profile {
+  width: 450px;
+  height: auto;
+  border-radius: 50%;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -121,11 +127,33 @@
   box-shadow: 2px 6px 8px 4px black;
 }
 
+#profile-flip-card-front {
+  border-radius: 50%;
+}
+
 /* Style the back side */
 .about-flip-card-back {
   background-color: #8f5e59;
   color: #f7f7f7;
   transform: rotateY(180deg);
-  padding: 1vh 1vw;
+  padding: 0.5vh 0.5vw;
   border-radius: 25px;
+}
+
+#profile-flip-card-back {
+  border-radius: 50%;
+}
+
+#profile-back-title {
+  margin-top: 10vh;
+}
+
+.about-back-description {
+  font-size: 12px;
+  line-height: 2vh;
+}
+
+#profile-back-description {
+  line-height: normal;
+  padding: 0 1vh;
 }
