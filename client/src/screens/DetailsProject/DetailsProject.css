@@ -1,5 +1,5 @@
 .projects-container {
-  max-height: 90vh;
+  /* max-height: 90vh; */
   background: #2d394c;
   background: linear-gradient(
     0deg,
@@ -16,7 +16,7 @@
   background-color: transparent;
   width: 500px;
   height: 350px;
-  margin: 2vh 2vw;
+  margin: 3vh 2vw 4vh 2vw;
   perspective: 1000px;
 }
 
