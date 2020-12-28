@@ -8,18 +8,18 @@ export default function CustomChatbot(props) {
   const config = {
     width: "300px",
     height: "400px",
-    floating: true,
+    floating: true
   };
 
   const theme = {
-    background: "white",
+    background: "#f7f7f7",
     fontFamily: "Arial, Helvetica, sans-serif",
     headerBgColor: "#8f5e59",
-    headerFontColor: "#fff",
+    headerFontColor: "#f7f7f7",
     headerFontSize: "25px",
     botBubbleColor: "#8f5e59",
-    botFontColor: "#fff",
-    userBubbleColor: "#fff",
+    botFontColor: "#f7f7f7",
+    userBubbleColor: "#f7f7f7",
     userFontColor: "#4c4c4c",
   };
 
@@ -42,6 +42,11 @@ export default function CustomChatbot(props) {
     {
       id: "Nice to meet you",
       message: "Hi {previousValue}, encantado (nice to meet you)!", 
+      trigger: "How can I direct you",
+    },
+    {
+      id: "How can I direct you",
+      message: "Here are some options of how I can direct you:", 
       trigger: "Displaying navigation options",
     },
     {
@@ -49,17 +54,17 @@ export default function CustomChatbot(props) {
       options: [
         {
           value: "work",
-          label: <Link className="chatbot-link" to='/details'>"I want to see some projects"</Link>,
+          label: <Link className="chatbot-link" to='/details'>I want to see some projects</Link>,
           trigger: "Done"
         },
         {
           value: "about",
-          label: <Link to='/about'>"I want to get to know you better"</Link>,
+          label: <Link to='/about'>I want to get to know you better</Link>,
           trigger: "Done"
         },
         {
           value: "contact",
-          label: <Link to='/contact'>"I want to contact you"</Link>,
+          label: <Link to='/contact'>I want to contact you</Link>,
           trigger: "Done"
         },
       ],

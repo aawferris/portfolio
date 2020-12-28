@@ -27,7 +27,9 @@ function Home(props) {
           <p id="link-description">PORTFOLIO</p>
           </div>
       </div>
-      <CustomChatbot />
+      <div id="chatbot-box">
+        <CustomChatbot />
+      </div>
     </MainLayout>
   );
 }
