@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom'
 import stars2 from '../../assets/stars2.mp4'
+import CustomChatbot from "../../components/chatbot/CustomChatBot"
 import MainLayout from '../../components/shared/MainLayout/MainLayout'
 
 import './Home.css'
@@ -25,7 +26,10 @@ function Home(props) {
           <Link to="/details"><img id="portfolio-link" src="/assets/external-link.png" /></Link>
           <p id="link-description">PORTFOLIO</p>
           </div>
-        </div>
+      </div>
+      <div id="chatbot-box">
+        <CustomChatbot />
+      </div>
     </MainLayout>
   );
 }
