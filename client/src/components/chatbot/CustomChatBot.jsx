@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
+import './CustomChatBot.css'
 
 export default function CustomChatbot(props) {
   const config = {
@@ -12,10 +14,10 @@ export default function CustomChatbot(props) {
   const theme = {
     background: "white",
     fontFamily: "Arial, Helvetica, sans-serif",
-    headerBgColor: "#00B2B2",
+    headerBgColor: "#8f5e59",
     headerFontColor: "#fff",
     headerFontSize: "25px",
-    botBubbleColor: "#00B2B2",
+    botBubbleColor: "#8f5e59",
     botFontColor: "#fff",
     userBubbleColor: "#fff",
     userFontColor: "#4c4c4c",
@@ -35,143 +37,30 @@ export default function CustomChatbot(props) {
     {
       id: "Awaiting user input for name",
       user: true,
-      trigger: "See Work",
+      trigger: "Nice to meet you",
     },
     {
-      id: "See Work",
+      id: "Nice to meet you",
       message: "Hi {previousValue}, encantado (nice to meet you)!", 
-      trigger: "Displaying options to eat",
+      trigger: "Displaying navigation options",
     },
     {
-      id: "Displaying options to eat",
+      id: "Displaying navigation options",
       options: [
         {
-          value: "pizza",
-          label: "Pizza",
-          trigger: "Asking for Tomatoes in Pizza",
+          value: "work",
+          label: <Link className="chatbot-link" to='/details'>"I want to see some projects"</Link>,
+          trigger: "Done"
         },
         {
-          value: "burger",
-          label: "Burger",
-          trigger: "Burger Not available",
-        },
-      ],
-    },
-    {
-      id: "Burger Not available",
-      message:
-        "Sorry, We don't have burger available at the moment. Would you like to try our pizza?",
-      trigger: "Asking for pizza after burger",
-    },
-    {
-      id: "Asking for pizza after burger",
-      options: [
-        {
-          value: true,
-          label: "Yes",
-          trigger: "Asking for Tomatoes in Pizza",
+          value: "about",
+          label: <Link to='/about'>"I want to get to know you better"</Link>,
+          trigger: "Done"
         },
         {
-          value: "false",
-          label: "No",
-          trigger: "Done",
-        },
-      ],
-    },
-    {
-      id: "Asking for Tomatoes in Pizza",
-      message: "Would you like to have tomatoes in your pizza",
-      trigger: "Adding Tomatoes in Pizza",
-    },
-    {
-      id: "Adding Tomatoes in Pizza",
-      options: [
-        {
-          value: true,
-          label: "Yes",
-          trigger: () => {
-            props.eventHandler("tomato");
-            return "Asking for Mushroom in Pizza";
-          },
-        },
-        {
-          value: "false",
-          label: "No",
-          trigger: "Asking for Mushroom in Pizza",
-        },
-      ],
-    },
-
-    {
-      id: "Asking for Mushroom in Pizza",
-      message: "Would you like to have mushroom in your pizza",
-      trigger: "Adding Mushroom in Pizza",
-    },
-
-    {
-      id: "Adding Mushroom in Pizza",
-      options: [
-        {
-          value: true,
-          label: "Yes",
-          trigger: () => {
-            props.eventHandler("mushroom");
-            return "Asking for Corn in Pizza";
-          },
-        },
-        {
-          value: "false",
-          label: "No",
-          trigger: "Asking for Corn in Pizza",
-        },
-      ],
-    },
-    {
-      id: "Asking for Corn in Pizza",
-      message: "Would you like to have corn in your pizza",
-      trigger: "Adding Corn in Pizza",
-    },
-
-    {
-      id: "Adding Corn in Pizza",
-      options: [
-        {
-          value: true,
-          label: "Yes",
-          trigger: () => {
-            props.eventHandler("corn");
-            return "Asking for Veggies in Pizza";
-          },
-        },
-        {
-          value: "false",
-          label: "No",
-          trigger: "Asking for Veggies in Pizza",
-        },
-      ],
-    },
-
-    {
-      id: "Asking for Veggies in Pizza",
-      message: "Would you like to have veggies in your pizza",
-      trigger: "Adding Veggies in Pizza",
-    },
-
-    {
-      id: "Adding Veggies in Pizza",
-      options: [
-        {
-          value: true,
-          label: "Yes",
-          trigger: () => {
-            props.eventHandler("veggie");
-            return "Done";
-          },
-        },
-        {
-          value: "false",
-          label: "No",
-          trigger: "Done",
+          value: "contact",
+          label: <Link to='/contact'>"I want to contact you"</Link>,
+          trigger: "Done"
         },
       ],
     },
