@@ -11,16 +11,13 @@
 #footer-text {
   font-size: 10px;
   color: #b1a89c;
+  width: 15vw;
 }
 
 #footer-left {
-  margin-left: 2vw;
-}
-
-#footer-right {
-  margin-right: 4vw;
+  margin-left: 12vw;
   display: flex;
-  width: 8vw;
+  width: 15vw;
   justify-content: space-around;
   align-items: center;
 }
@@ -50,12 +47,6 @@
   transform: scale(1.1, 1.1);
 }
 
-@media screen and (max-width: 1200px) {
-  #footer-right {
-    margin-right: 7vw;
-  }
-}
-
 @media screen and (max-width: 900px) {
   #gh-logo,
   #resume-logo {
@@ -67,8 +58,8 @@
     height: auto;
   }
 
-  #footer-right {
-    margin-right: 9vw;
+  #footer-left {
+    margin-left: 15vw;
   }
 }
 
@@ -83,7 +74,8 @@
     height: auto;
   }
 
-  #footer-right {
-    margin-right: 14vw;
+  #footer-left {
+    width: 18vw;
+    margin-left: 18vw;
   }
 }
