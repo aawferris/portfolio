@@ -54,7 +54,7 @@ export default function CustomChatbot(props) {
       options: [
         {
           value: "work",
-          label: <Link className="chatbot-link" to='/details'>I want to see some projects</Link>,
+          label: <Link className="chatbot-link" to='/portfolio'>I want to see some projects</Link>,
           trigger: "Done"
         },
         {
