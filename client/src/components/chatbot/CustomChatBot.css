@@ -1,12 +1,12 @@
 a {
-  text-decoration: none;
   -webkit-text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
-  color: #f7f7f7;
+  text-decoration: none;
   -webkit-color: #f7f7f7;
   -moz-color: #f7f7f7;
   -ms-color: #f7f7f7;
+  color: #f7f7f7;
 }
 
 a:hover {
