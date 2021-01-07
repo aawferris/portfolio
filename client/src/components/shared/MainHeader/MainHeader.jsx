@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
 
 import './MainHeader.css'
@@ -17,7 +16,7 @@ function MainHeader(props) {
 
             <Dropdown.Menu id='nav-menu'>
               <Dropdown.Item href="/about" className="dropdown-item">ABOUT</Dropdown.Item>
-              <Dropdown.Item href="/details" className="dropdown-item">PORTFOLIO</Dropdown.Item>
+              <Dropdown.Item href="/portfolio" className="dropdown-item">PORTFOLIO</Dropdown.Item>
               <Dropdown.Item href="/contact" className="dropdown-item" id="below-line">CONTACT</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

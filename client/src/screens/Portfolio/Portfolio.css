@@ -1,138 +1,86 @@
-#main-portfolio-container {
-  display: flex;
-  justify-content: center;
-  background: rgb(45, 57, 76);
+.projects-container {
+  /* max-height: 90vh; */
+  background: #2d394c;
   background: linear-gradient(
     0deg,
     rgba(45, 57, 76, 0.896796218487395) 0%,
     rgba(45, 57, 76, 1) 100%
   );
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  z-index: -1;
-}
-
-#card-container {
   display: flex;
-  flex-direction: column;
-  margin: 4vh 0;
-}
-
-.card {
-  display: grid;
-  grid-template-areas:
-    "top-left top-right"
-    "image image"
-    "image image"
-    "description description";
-  text-align: center;
-  width: 80vw;
-  margin: 2vh 0;
-  box-shadow: 2px 4px 8px 4px #38c2bb;
-}
-
-.top-left {
-  grid-area: top-left;
-  display: flex;
-  flex-direction: column;
-  line-height: 0.1vh;
-  text-align: left;
-  color: #b1a89c;
-  padding-left: 5vw;
-  margin-bottom: 1vh;
-}
-
-.top-right {
-  grid-area: top-right;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 10vw;
-  justify-content: space-around;
-  padding-left: 30vw;
+  flex-flow: row wrap;
 }
 
-.deploy-link {
-  width: 50px;
-  height: auto;
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 350px;
+  margin: 3vh 2vw 4vh 2vw;
+  perspective: 1000px;
 }
 
-.repo-link {
-  width: 50px;
-  height: auto;
-}
-
-.deploy-link:hover,
-.repo-link:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.screenshot-box {
-  grid-area: image;
-}
-
-.screenshot {
-  width: 70vw;
-  height: auto;
-}
-
-.project-description-box {
-  grid-area: description;
-  max-width: 60vw;
-  margin-left: 10vw;
-}
-
-.project-description {
-  color: #b1a89c;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
-@media screen and (max-width: 1200px) {
-  .deploy-link {
-    width: 40px;
-    height: auto;
-  }
-
-  .repo-link {
-    width: 50px;
-    height: auto;
-  }
+.image {
+  width: 500px;
+  height: auto;
+  border-radius: 25px;
 }
 
-@media screen and (max-width: 975px) {
-  .top-right {
-    padding-left: 20vw;
-  }
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 800px) {
-  .top-right {
-    padding-left: 10vw;
-  }
-
-  .deploy-link {
-    width: 30px;
-    height: auto;
-  }
-
-  .repo-link {
-    width: 40px;
-    height: auto;
-  }
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
-@media screen and (max-width: 500px) {
-  .top-right {
-    padding-left: 0vw;
-  }
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 25px;
+}
 
-  .deploy-link {
-    width: 30px;
-    height: auto;
-  }
+/* Style the back side */
+.flip-card-back {
+  background-color: #8f5e59;
+  color: #f7f7f7;
+  transform: rotateY(180deg);
+  padding: 1vh 1vw;
+  border-radius: 25px;
+}
 
-  .repo-link {
-    width: 40px;
-    height: auto;
-  }
+.project-link {
+  text-decoration: none;
+  margin: 0 2vw;
+}
+
+.project-link:hover {
+  color: #f3f0ec;
+}
+
+.project-link:visited {
+  color: #b1a89c;
+}
+
+.back-tools {
+  color: #b1a89c;
 }
