@@ -23,7 +23,7 @@ https://www.figma.com/file/K69DVzSdUJG2PyVbW4V3nC/Portfolio?node-id=0%3A1
   |__/screens
     |__/Home
     |__/Projects
-    |__/DetailsProject
+    |__/Portfolio
     |__/About
     |__/Contact
   |__/components
