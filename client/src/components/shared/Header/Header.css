@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #8f5e59 0%, #2d394cee 36%);
+  background-color: rgb(35, 40, 64);
   padding: 2vh 0vw;
   height: 10vh;
+  border-bottom: 1px dashed white;
 }
 
 #header-left {
@@ -20,7 +21,7 @@
   margin-left: 1vw;
   font-size: 20px;
   letter-spacing: 0.2vw;
-  color: #f7f7f7;
+  color: rgb(246, 73, 167);
   margin-top: 4vh;
 }
 
