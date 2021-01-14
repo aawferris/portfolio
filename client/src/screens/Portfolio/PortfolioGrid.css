@@ -1,9 +1,21 @@
+* {
+  font-family: "IBM Plex Mono", monospace;
+}
+
 #main-project-container {
   display: grid;
   background-color: rgb(35, 40, 64);
   grid-template-areas:
     "project details details"
     "project details details";
+}
+
+#sub-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 25vw;
+  border-right: 1px dashed white;
 }
 
 .btn-show {
@@ -15,19 +27,11 @@
 
 .project {
   grid-area: project;
-  border: 3px solid green;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  border-right: 1px dashed white;
-  width: 25vw;
-  height: 80vh;
 }
 
 .proj-name {
   color: rgb(246, 73, 167);
   font-size: 3vh;
-  font-weight: 800;
   width: 15vw;
   text-align: center;
 }
