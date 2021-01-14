@@ -2,7 +2,8 @@
   background-color: rgb(35, 40, 64);
   display: flex;
   position: absolute;
-  height: 100px;
+  min-height: 10vh;
+  /* height: 100px; */
   width: 100vw;
   justify-content: space-between;
   align-items: center;

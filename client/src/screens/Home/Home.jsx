@@ -27,7 +27,7 @@ function Home(props) {
           </div>
       </div>
       {/* <div id="chatbot-box"> */}
-        <CustomChatbot />
+        {/* <CustomChatbot /> */}
       {/* </div> */}
     </Layout>
   );
