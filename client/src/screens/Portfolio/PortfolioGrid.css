@@ -8,6 +8,7 @@
   grid-template-areas:
     "project details details"
     "project details details";
+  width: 100vw;
 }
 
 #sub-container {
@@ -31,9 +32,19 @@
 
 .proj-name {
   color: rgb(246, 73, 167);
-  font-size: 3vh;
-  width: 15vw;
-  text-align: center;
+  font-size: 2vh;
+  font-weight: 600;
+  text-shadow: rgb(206, 64, 142) 2px 2px 4px;
+  text-align: left;
+  margin-left: 1.5vw;
+}
+
+.proj-name:hover {
+  color: rgb(246, 73, 167);
+  font-size: 2vh;
+  font-weight: 600;
+  text-shadow: rgb(206, 64, 142) -2px 2px 4px;
+  text-align: left;
 }
 
 a.proj-link {
@@ -59,6 +70,35 @@ a.proj-link:hover {
   width: 66vw;
   height: 50vh;
   margin-top: 10vh;
+}
+
+#closer {
+  color: white;
+  margin-bottom: 2vh;
+  border: 1px slid hotpink;
+}
+
+.closex {
+  height: 20px;
+  width: auto;
+  filter: invert(100%);
+}
+
+#proj-about {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  color: rgb(163, 202, 205);
+  text-align: left;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  width: 60vw;
+}
+
+#proj-about > h2,
+h3 {
+  border-bottom: 1px dashed white;
+  width: 60vw;
 }
 
 .proj-img {

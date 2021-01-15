@@ -8,41 +8,81 @@ function Portfolio(props) {
   const [showThird, setShowThird] = useState(false)
   const [showFourth, setShowFourth] = useState(false)
 
+  const handleClick1 = () => {
+    setShowFirst(true)
+    setShowSecond(false)
+    setShowThird(false)
+    setShowFourth(false)
+  }
+
+  const handleClick2 = () => {
+    setShowFirst(false)
+    setShowSecond(true)
+    setShowThird(false)
+    setShowFourth(false)
+  }
+
+  const handleClick3 = () => {
+    setShowFirst(false)
+    setShowSecond(false)
+    setShowThird(true)
+    setShowFourth(false)
+  }
+
+  const handleClick4 = () => {
+    setShowFirst(false)
+    setShowSecond(false)
+    setShowThird(false)
+    setShowFourth(true)
+  }
+
   return (
   <Layout>
       <div id='main-project-container'>
         <div id="sub-container">
-        <div className="project">
-          <button
-            className="btn-show"
-            onClick={() => setShowFirst(!showFirst)}>
-            <p className="proj-name">86 List</p>
-          </button>
-        </div>
-          
-        <div className="project">
-            <button
-              className="btn-show"
-              onClick={() => setShowSecond(!showSecond)}>
-              <p className="proj-name">Teacher Source</p>
-            </button>
-        </div>
-          
           <div className="project">
             <button
               className="btn-show"
-              onClick={() => setShowThird(!showThird)}>
-              <p className="proj-name">Productive.ly</p>
+              onClick={() => handleClick1()}>
+              <p className="proj-name">86 List</p>
             </button>
-        </div>
-          
+          </div>
+            
           <div className="project">
-            <button
-              className="btn-show"
-              onClick={() => setShowFourth(!showFourth)}>
-              <p className="proj-name">CIA Cover Story</p>
-            </button>
+              <button
+                className="btn-show"
+                onClick={() => handleClick2()}>
+                <p className="proj-name">Teacher Source</p>
+              </button>
+          </div>
+            
+            <div className="project">
+              <button
+                className="btn-show"
+                onClick={() => handleClick3()}>
+                <p className="proj-name">Productive.ly</p>
+              </button>
+          </div>
+            
+            <div className="project">
+              <button
+                className="btn-show"
+                onClick={() => handleClick4()}>
+                <p className="proj-name">CIA Cover Story</p>
+              </button>
+          </div>
         </div>
+
+        <div id="proj-about">
+          <h2>PROJECTS</h2>
+          <p>
+            As a growing developer, it's been brought me a great amount of joy to be able to combine my love for building things with my love for artistic expression.  Finding the balance between the two
+            and growing in each area is a life-long passion.
+          </p>
+          <h3>HOW TO BROWSE</h3>
+          <p>Just click on any of the project names on the left-hand side to see a little bit about which technologies were used, a brief description,
+           a snapshot of the main page, and links to the deployed site and GitHub repo. 
+          </p>
         </div>
         
         {showFirst ? (
@@ -53,7 +93,7 @@ function Portfolio(props) {
               <div className="proj-link-container">
                 <a className="proj-link" href="https://github.com/aawferris/86list" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
                 <a className="proj-link" href="https://86list.netlify.app/" target="_blank" rel="noreferrer" alt="live site for this link">SITE</a>
-              </div>
+            </div>
             </div>
           ) : (
               <div></div>
