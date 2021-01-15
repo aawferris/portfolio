@@ -1,0 +1,117 @@
+* {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#main-project-container {
+  display: grid;
+  background-color: rgb(35, 40, 64);
+  grid-template-areas:
+    "project details details"
+    "project details details";
+  width: 100vw;
+}
+
+#sub-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 25vw;
+  border-right: 1px dashed white;
+}
+
+.btn-show {
+  background: transparent;
+  border: none;
+  align-self: center;
+  outline: none;
+}
+
+.project {
+  grid-area: project;
+}
+
+.proj-name {
+  color: rgb(246, 73, 167);
+  font-size: 2vh;
+  font-weight: 600;
+  text-shadow: rgb(206, 64, 142) 2px 2px 4px;
+  text-align: left;
+  margin-left: 1.5vw;
+}
+
+.proj-name:hover {
+  color: rgb(246, 73, 167);
+  font-size: 2vh;
+  font-weight: 600;
+  text-shadow: rgb(206, 64, 142) -2px 2px 4px;
+  text-align: left;
+}
+
+a.proj-link {
+  color: rgb(89, 223, 127);
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+a.proj-link:hover {
+  text-decoration: underline;
+}
+
+.hide-me {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  box-shadow: rgb(60, 82, 209) 8px 8px 0px;
+  background-color: rgb(217, 219, 219);
+  color: rgb(35, 40, 64);
+  font-weight: 600;
+  width: 66vw;
+  height: 50vh;
+  margin-top: 10vh;
+}
+
+#closer {
+  color: white;
+  margin-bottom: 2vh;
+  border: 1px slid hotpink;
+}
+
+.closex {
+  height: 20px;
+  width: auto;
+  filter: invert(100%);
+}
+
+#proj-about {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  color: rgb(163, 202, 205);
+  text-align: left;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  width: 60vw;
+}
+
+#proj-about > #port-h2,
+#port-h3 {
+  border-bottom: 1px dashed white;
+  width: 60vw;
+}
+
+.proj-img {
+  width: 25vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgb(60, 82, 209) 8px 8px 0px;
+  margin-top: 5vh;
+}
+
+.proj-link-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 2vw;
+  width: 15vw;
+}

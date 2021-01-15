@@ -1,11 +1,13 @@
 #footer-main-container {
-  background: linear-gradient(90deg, #2d394cee 66%, #8f5e59 98%);
+  background-color: rgb(35, 40, 64);
   display: flex;
   position: absolute;
-  height: 100px;
+  min-height: 10vh;
+  /* height: 100px; */
   width: 100vw;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px dashed white;
 }
 
 #footer-text {

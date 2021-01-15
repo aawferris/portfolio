@@ -13,7 +13,7 @@ function Footer(props) {
         <a href="https://www.linkedin.com/in/andrew-ferris-8929401aa/" alt="Andrew's LinkedIn profile" target="_blank" rel="noreferrer"><img id="li-logo" src="/assets/linkedin.png" alt=""/></a>
       </div>
     </div>
-  );
+  )
 }
 
 export default Footer;
