@@ -20,9 +20,10 @@
 #header-name {
   align-content: center;
   margin-left: 1vw;
-  font-size: 20px;
+  font-size: 3vw;
   letter-spacing: 0.2vw;
   color: rgb(246, 73, 167);
+  font-weight: 800;
   margin-top: 4vh;
 }
 
