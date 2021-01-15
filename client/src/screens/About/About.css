@@ -1,16 +1,8 @@
 #about-main-container {
   display: flex;
   flex-direction: column;
-  background: rgb(45, 57, 76);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 57, 76, 0.896796218487395) 0%,
-    rgba(45, 57, 76, 1) 100%
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 90vh;
+  background-color: rgb(35, 40, 64);
+  min-height: 80vh;
   min-width: 100vw;
   color: #f7f7f7;
 }
