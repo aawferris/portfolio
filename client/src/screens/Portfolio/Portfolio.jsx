@@ -44,7 +44,7 @@ function Portfolio(props) {
             <button
               className="btn-show"
               onClick={() => handleClick1()}>
-              <p className="proj-name">86 List</p>
+              <a className="proj-name">86 List</a>
             </button>
           </div>
             
@@ -52,7 +52,7 @@ function Portfolio(props) {
               <button
                 className="btn-show"
                 onClick={() => handleClick2()}>
-                <p className="proj-name">Teacher Source</p>
+                <a className="proj-name">Teacher Source</a>
               </button>
           </div>
             
@@ -60,7 +60,7 @@ function Portfolio(props) {
               <button
                 className="btn-show"
                 onClick={() => handleClick3()}>
-                <p className="proj-name">Productive.ly</p>
+                <a className="proj-name">Productive.ly</a>
               </button>
           </div>
             
@@ -68,7 +68,7 @@ function Portfolio(props) {
               <button
                 className="btn-show"
                 onClick={() => handleClick4()}>
-                <p className="proj-name">CIA Cover Story</p>
+                <a className="proj-name">CIA Cover Story</a>
               </button>
           </div>
         </div>

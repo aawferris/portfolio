@@ -28,6 +28,7 @@
 
 .project {
   grid-area: project;
+  padding-top: 2.5vh;
 }
 
 .proj-name {
@@ -39,12 +40,27 @@
   margin-left: 1.5vw;
 }
 
-.proj-name:hover {
-  color: rgb(246, 73, 167);
-  font-size: 2vh;
-  font-weight: 600;
-  text-shadow: rgb(206, 64, 142) -2px 2px 4px;
-  text-align: left;
+/* TO MAKE THE PROJECT NAME LINKS UNDERLINE */
+a.proj-name {
+  position: relative;
+}
+
+a.proj-name::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(89, 223, 127);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.proj-name:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 a.proj-link {

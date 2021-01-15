@@ -72,7 +72,7 @@ function About(props) {
             <button
               className="btn-show"
               onClick={() => handleAboutClick()}>
-              <p className="proj-name">About Me</p>
+              <a className="proj-name">About Me</a>
             </button>
           </div>
 
@@ -80,7 +80,7 @@ function About(props) {
             <button
               className="btn-show"
               onClick={() => handleAboutClick2()}>
-              <p className="proj-name">Music</p>
+              <a className="proj-name">Music</a>
             </button>
           </div>
 
@@ -88,7 +88,7 @@ function About(props) {
             <button
               className="btn-show"
               onClick={() => handleAboutClick3()}>
-              <p className="proj-name">Language</p>
+              <a className="proj-name">Language</a>
             </button>
           </div>
 
@@ -96,7 +96,7 @@ function About(props) {
             <button
               className="btn-show"
               onClick={() => handleAboutClick4()}>
-              <p className="proj-name">Exercise</p>
+              <a className="proj-name">Exercise</a>
             </button>
           </div>
 
@@ -104,7 +104,7 @@ function About(props) {
             <button
               className="btn-show"
               onClick={() => handleAboutClick5()}>
-              <p className="proj-name">Cooking</p>
+              <a className="proj-name">Cooking</a>
             </button>
           </div>
 
@@ -112,7 +112,7 @@ function About(props) {
             <button
               className="btn-show"
               onClick={() => handleAboutClick6()}>
-              <p className="proj-name">Travel</p>
+              <a className="proj-name">Travel</a>
             </button>
           </div>
         </div>
@@ -128,7 +128,7 @@ function About(props) {
             <div className="hide-me">
               <p className="proj-lang">About Me</p>
               <p className="proj-desc">Constant learner and leader in Education, pivoting to full stack development and passionate about organizational health. I believe that every person has and can achieve their life’s mission. I do this by leveraging my passion and experience in communication, education, and organizational health through a systematic and inclusive process to find and efficiently execute the best solution to move the mission forward. I create beautiful, user-friendly, and pragmatic apps and make sure I am always helping someone else succeed in their mission. I am making the transition to the tech industry because I believe it is the medium to see this mission through.</p>
-              <img className="proj-img" src="/assets/profile.jpg" alt="Andy in Ft. Bragg, CA" />
+              <img className="proj-img" id="profile" src="/assets/profile.jpg" alt="Andy in Ft. Bragg, CA" />
             </div>
           ) : (
               <div></div>
