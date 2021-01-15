@@ -95,8 +95,8 @@ a.proj-link:hover {
   width: 60vw;
 }
 
-#proj-about > h2,
-h3 {
+#proj-about > #port-h2,
+#port-h3 {
   border-bottom: 1px dashed white;
   width: 60vw;
 }
@@ -104,7 +104,6 @@ h3 {
 .proj-img {
   width: 25vw;
   height: auto;
-
   border-radius: 10px;
   box-shadow: rgb(60, 82, 209) 8px 8px 0px;
   margin-top: 5vh;

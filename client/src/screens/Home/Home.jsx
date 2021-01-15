@@ -22,8 +22,8 @@ function Home(props) {
           <div id="brand-box">
             <p id="intro-brand-statement">Constant learner dedicated to creating beautiful apps and helping others succeed in their mission. </p>
           </div>
-          <div>
-          <Link to="/portfolio"><p id="link-description">PORTFOLIO</p></Link>
+          <div> 
+          <Link id="port-link" to="/portfolio"><a id="link-description" className="w3-center w3-animate-right w3-animate-opacity" href="#">PORTFOLIO</a></Link>
           </div>
       </div>
       {/* <div id="chatbot-box"> */}

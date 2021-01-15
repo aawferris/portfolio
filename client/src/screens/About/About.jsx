@@ -120,7 +120,7 @@ function About(props) {
         <div id="proj-about">
         <h2>HOBBIES</h2>
           <p>
-            There are so many things that I enjoy doing and taking in, but here are a few of my tops.
+            Hey! Thanks so much for visiting my site. There are so many things that I enjoy doing and taking in. Click the items on the left to learn a little bit more about me. 
           </p>
         </div>
 
@@ -138,7 +138,7 @@ function About(props) {
             <div className="hide-me">
               <p className="proj-lang">Music</p>
               <p className="proj-desc">I've played since 2003. I play guitar (main instrument), bass, drums, keyboard, and sing background vocals. I have had the opportunity to play in front of 10,000 people, play with a Grammy-nominated artist and record with a Grammy-winning sound engineer.</p>
-            <img className="proj-img" src="/assets/guitar-icon.png" alt="guitar icon" />
+            <img className="abt-img" src="/assets/guitar-icon.png" alt="guitar icon" />
             </div>
           ) : (
               <div></div>
@@ -148,7 +148,7 @@ function About(props) {
             <div className="hide-me">
               <p className="proj-lang">Languages</p>
               <p className="proj-desc">English & Spanish (fluent), German (elementary), Portuguese & Galician (able to read, limited speaking), Arabic & Greek (able to read and write the script, limited speaking).</p>
-              <img className="proj-img" src="/assets/language.png" alt="speech bubbles icon" />
+              <img className="abt-img" src="/assets/language.png" alt="speech bubbles icon" />
             </div>
           ) : (
               <div></div>
@@ -158,7 +158,7 @@ function About(props) {
             <div className="hide-me">
               <p className="proj-lang">Exercise</p>
               <p className="proj-desc">I enjoy outdoor activities and lifting weights. I have played and coached soccer in High School and Middle School.</p>
-              <img className="proj-img" src="/assets/dumbbell.png" alt="dumbbell icon" />
+              <img className="abt-img" src="/assets/dumbbell.png" alt="dumbbell icon" />
             </div>
           ) : (
               <div></div>
@@ -168,7 +168,7 @@ function About(props) {
             <div className="hide-me">
               <p className="proj-lang">Cooking</p>
               <p className="proj-desc">I enjoy cooking Italian, New American, Thai and fusion. I enjoy the process of layering flavors and trying new flavor combinations.</p>
-              <img className="proj-img" src="/assets/cooking.png" alt="chef's hat icon" />
+              <img className="abt-img" src="/assets/cooking.png" alt="chef's hat icon" />
             </div>
           ) : (
               <div></div>
@@ -178,7 +178,7 @@ function About(props) {
             <div className="hide-me">
               <p className="proj-lang">Travel</p>
               <p className="proj-desc">Whether it's my own backyard or around the world, I enjoy exploring new places and experiencing new cultures and people. I have lived in Guatemala for 6 months, been to five European countries, 3 Asian countries and various other places.</p>
-              <img className="proj-img" src="/assets/travel.png" alt="airplane icon" />
+              <img className="abt-img overlay" src="/assets/travel.png" alt="airplane icon" />
             </div>
           ) : (
               <div></div>

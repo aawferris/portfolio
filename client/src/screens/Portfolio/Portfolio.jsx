@@ -74,12 +74,12 @@ function Portfolio(props) {
         </div>
 
         <div id="proj-about">
-          <h2>PROJECTS</h2>
+          <h2 id="port-h2">PROJECTS</h2>
           <p>
             As a growing developer, it's been brought me a great amount of joy to be able to combine my love for building things with my love for artistic expression.  Finding the balance between the two
             and growing in each area is a life-long passion.
           </p>
-          <h3>HOW TO BROWSE</h3>
+          <h3 id="port-h3">HOW TO BROWSE</h3>
           <p>Just click on any of the project names on the left-hand side to see a little bit about which technologies were used, a brief description,
            a snapshot of the main page, and links to the deployed site and GitHub repo. 
           </p>
