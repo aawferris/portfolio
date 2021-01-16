@@ -27,6 +27,7 @@
 }
 
 #slash {
+  margin-left: 5vw;
   color: #f7f7f7;
   display: inline-block;
   -webkit-transform: scale(2, 1); /* Safari and Chrome */
