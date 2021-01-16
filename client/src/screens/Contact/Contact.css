@@ -8,6 +8,15 @@
   padding-top: 100px;
 }
 
+/* .proj-name {
+  color: rgb(246, 73, 167);
+  font-size: 2vw;
+  font-weight: 600;
+  text-shadow: rgb(206, 64, 142) 2px 2px 4px;
+  text-align: left;
+  margin-left: 1.5vw;
+} */
+
 .contact-section {
   margin: 0 auto;
   margin-top: 50px;
@@ -29,7 +38,7 @@
 }
 
 #proj-name {
-  font-size: 100px;
+  font-size: 20vw;
   line-height: 1vh;
   font-weight: bold;
   color: rgb(163, 202, 205);
