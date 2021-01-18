@@ -37,7 +37,8 @@ function Portfolio(props) {
   }
 
   return (
-  <Layout>
+    <Layout>
+      {/* LEFT SIDE NAVIGATION  */}
       <div id='main-project-container'>
         <div id="sub-container">
           <div className="project">
@@ -71,8 +72,17 @@ function Portfolio(props) {
                 <a className="proj-name">CIA Cover Story</a>
               </button>
           </div>
+
+          <div className="project">
+              <button
+                className="btn-show"
+                onClick={() => handleClick4()}>
+                <a className="proj-name">Generador de contraseñas aleatorias</a>
+              </button>
+          </div>
         </div>
 
+        {/* WHAT APPEARS IN ON THE RIGHT ONCLICK WITH NAV  */}
         <div id="proj-about">
           <h2 id="port-h2">PROJECTS</h2>
           <p>
@@ -135,6 +145,19 @@ function Portfolio(props) {
               <div className="proj-link-container">
                 <a className="proj-link" href="https://github.com/aawferris/pCIA-cover-story" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
                 <a className="proj-link" href="https://aawferris.github.io/CIA-cover-story/index.html" target="_blank" rel="noreferrer" alt="live site for this link">SITE</a>
+              </div>
+            </div>
+          ) : (
+              <div></div>
+          )}
+        
+        {showFourth ? (
+            <div className="hide-me">
+              <p className="proj-lang">Built with: Javascript, CSS, HTML5</p>
+              <p className="proj-desc">Un proyecto en español que genera contraseñas.  He terminado con la primera iteración, la cual genera una contrasña con letra, número y símbolo, pero la segunda iteracion tendra mas seguridad todavia. La meta es poder ponerlo en un sitio web para ayudarle al cliente.</p>
+              <img className="proj-img" src="/assets/randompass.png" alt="image of front page" />
+              <div className="proj-link-container">
+                <a className="proj-link" href="https://github.com/aawferris/randompassword/" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
               </div>
             </div>
           ) : (
