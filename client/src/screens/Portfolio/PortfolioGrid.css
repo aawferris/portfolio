@@ -37,7 +37,7 @@
   font-weight: 600;
   text-shadow: rgb(206, 64, 142) 2px 2px 4px;
   text-align: left;
-  margin-left: 1.5vw;
+  margin-left: 1.25vw;
 }
 
 /* TO MAKE THE PROJECT NAME LINKS UNDERLINE */
@@ -156,5 +156,10 @@ a.proj-link:hover {
     height: auto;
     margin-top: 3vh;
     margin-bottom: 1.5vh;
+  }
+
+  .proj-name {
+    font-size: 1.5vw;
+    margin-left: 0.6vw;
   }
 }
