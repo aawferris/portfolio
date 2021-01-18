@@ -7,12 +7,18 @@ function Portfolio(props) {
   const [showSecond, setShowSecond] = useState(false)
   const [showThird, setShowThird] = useState(false)
   const [showFourth, setShowFourth] = useState(false)
+  const [showFifth, setShowFifth] = useState(false)
+  const [showSixth, setShowSix] = useState(false)
+  const [showSeventh, setShowSeventh] = useState(false)
 
   const handleClick1 = () => {
     setShowFirst(true)
     setShowSecond(false)
     setShowThird(false)
     setShowFourth(false)
+    setShowFifth(false)
+    setShowSix(false)
+    setShowSeventh(false)
   }
 
   const handleClick2 = () => {
@@ -20,6 +26,9 @@ function Portfolio(props) {
     setShowSecond(true)
     setShowThird(false)
     setShowFourth(false)
+    setShowFifth(false)
+    setShowSix(false)
+    setShowSeventh(false)
   }
 
   const handleClick3 = () => {
@@ -27,6 +36,9 @@ function Portfolio(props) {
     setShowSecond(false)
     setShowThird(true)
     setShowFourth(false)
+    setShowFifth(false)
+    setShowSix(false)
+    setShowSeventh(false)
   }
 
   const handleClick4 = () => {
@@ -34,6 +46,39 @@ function Portfolio(props) {
     setShowSecond(false)
     setShowThird(false)
     setShowFourth(true)
+    setShowFifth(false)
+    setShowSix(false)
+    setShowSeventh(false)
+  }
+
+  const handleClick5 = () => {
+    setShowFirst(false)
+    setShowSecond(false)
+    setShowThird(false)
+    setShowFourth(false)
+    setShowFifth(true)
+    setShowSix(false)
+    setShowSeventh(false)
+  }
+
+  const handleClick6 = () => {
+    setShowFirst(false)
+    setShowSecond(false)
+    setShowThird(false)
+    setShowFourth(false)
+    setShowFifth(false)
+    setShowSix(true)
+    setShowSeventh(false)
+  }
+
+  const handleClick7 = () => {
+    setShowFirst(false)
+    setShowSecond(false)
+    setShowThird(false)
+    setShowFourth(false)
+    setShowFifth(false)
+    setShowSix(false)
+    setShowSeventh(true)
   }
 
   return (
@@ -76,11 +121,29 @@ function Portfolio(props) {
           <div className="project">
               <button
                 className="btn-show"
-                onClick={() => handleClick4()}>
-                <a className="proj-name">Generador de contraseñas aleatorias</a>
+                onClick={() => handleClick5()}>
+                <a className="proj-name">Generador de contraseñas</a>
               </button>
           </div>
+
+          <div className="project">
+              <button
+                className="btn-show"
+                onClick={() => handleClick6()}>
+                <a className="proj-name">Undecided.ly</a>
+              </button>
+          </div>
+
+          <div className="project">
+              <button
+                className="btn-show"
+                onClick={() => handleClick7()}>
+                <a className="proj-name">Text2Speech</a>
+              </button>
+          </div>
+
         </div>
+        
 
         {/* WHAT APPEARS IN ON THE RIGHT ONCLICK WITH NAV  */}
         <div id="proj-about">
@@ -151,13 +214,39 @@ function Portfolio(props) {
               <div></div>
           )}
         
-        {showFourth ? (
+        {showFifth ? (
             <div className="hide-me">
               <p className="proj-lang">Built with: Javascript, CSS, HTML5</p>
               <p className="proj-desc">Un proyecto en español que genera contraseñas.  He terminado con la primera iteración, la cual genera una contrasña con letra, número y símbolo, pero la segunda iteracion tendra mas seguridad todavia. La meta es poder ponerlo en un sitio web para ayudarle al cliente.</p>
               <img className="proj-img" src="/assets/randompass.png" alt="image of front page" />
-              <div className="proj-link-container">
+              <div id="proj-link-container">
                 <a className="proj-link" href="https://github.com/aawferris/randompassword/" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
+              </div>
+            </div>
+          ) : (
+              <div></div>
+          )}
+        
+        {showSixth ? (
+            <div className="hide-me">
+              <p className="proj-lang">Built with: Javascript, React, CSS, HTML5</p>
+              <p className="proj-desc">Finally an app for millennials who can't decide what to cook for dinner.</p>
+              <img className="proj-img" src="/assets/undecidedly.png" alt="image of front page" />
+              <div id="proj-link-container">
+                <a className="proj-link" href="https://github.com/aawferris/Undecided.ly" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
+              </div>
+            </div>
+          ) : (
+              <div></div>
+          )}
+        
+        {showSeventh ? (
+            <div className="hide-me">
+              <p className="proj-lang">Built with: Javascript, CSS, HTML5</p>
+              <p className="proj-desc">A basic text to speech app for English.</p>
+              <img className="proj-img" src="/assets/text2speech.png" alt="image of front page" />
+              <div id="proj-link-container">
+                <a className="proj-link" href="https://github.com/aawferris/text2speech" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
               </div>
             </div>
           ) : (

@@ -33,7 +33,7 @@
 
 .proj-name {
   color: rgb(246, 73, 167);
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 600;
   text-shadow: rgb(206, 64, 142) 2px 2px 4px;
   text-align: left;
@@ -128,6 +128,14 @@ a.proj-link:hover {
 .proj-link-container {
   display: flex;
   justify-content: space-between;
+  margin: 2vh 2vw;
+  width: 15vw;
+}
+
+/* FOR REPOS WITH NO DEPLOYMENT */
+#proj-link-container {
+  display: flex;
+  justify-content: center;
   margin: 2vh 2vw;
   width: 15vw;
 }
