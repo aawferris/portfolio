@@ -69,37 +69,6 @@ option {
   color: rgb(246, 73, 167);
 }
 
-/* #hamburger-icon {
-  width: 40px;
-  height: auto;
-  margin-right: 5vw;
-  filter: invert(100%);
-}
-
-#hamburger-icon:hover {
-  width: 40px;
-  height: 40px;
-  -webkit-animation: spin 1s ease-in-out 1;
-  -moz-animation: spin 1s linear 1;
-  animation: spin 1s linear 1;
-}
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(90deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(90deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-} */
-
 #hamburger-icon {
   margin: 1em;
   width: 40px;
