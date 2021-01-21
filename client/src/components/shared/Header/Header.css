@@ -1,0 +1,158 @@
+#main-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 40, 64);
+  padding: 2vh 0vw;
+  min-height: 10vh;
+  height: 10vh;
+  border-bottom: 1px dashed white;
+}
+
+#header-left {
+  display: flex;
+}
+
+#header-right {
+  margin-top: 1vh;
+}
+
+#header-name {
+  align-content: center;
+  margin-left: 1vw;
+  font-size: 3vw;
+  letter-spacing: 0.2vw;
+  color: rgb(246, 73, 167);
+  font-weight: 800;
+  margin-top: 4vh;
+}
+
+#name-link {
+  text-decoration: none;
+}
+
+#nav-dropdown {
+  display: flex;
+  align-self: center;
+  padding-right: 5%;
+}
+
+#nav-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+
+#nav-menu {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  background-color: rgb(163, 202, 205);
+  color: rgb(246, 73, 167);
+  width: fit-content;
+}
+
+.dropdown-item {
+  color: rgb(246, 73, 167);
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(35, 40, 64);
+  color: rgb(246, 73, 167);
+}
+
+select,
+option {
+  color: rgb(246, 73, 167);
+}
+
+/* #hamburger-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 5vw;
+  filter: invert(100%);
+}
+
+#hamburger-icon:hover {
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s ease-in-out 1;
+  -moz-animation: spin 1s linear 1;
+  animation: spin 1s linear 1;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(90deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+} */
+
+#hamburger-icon {
+  margin: 1em;
+  width: 40px;
+}
+
+#hamburger-icon:hover {
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s ease-in-out 1;
+  -moz-animation: spin 1s linear 1;
+  animation: spin 1s linear 1;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+#profile-pic {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 2vw;
+}
+
+#profile-pic:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 775px) {
+  #profile-pic {
+    width: 80px;
+    height: auto;
+  }
+  #nav-menu {
+    margin-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #profile-pic {
+    width: 60px;
+    height: auto;
+  }
+}

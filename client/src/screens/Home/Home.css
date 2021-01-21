@@ -1,0 +1,223 @@
+#home-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  background-color: rgb(35, 40, 64);
+}
+
+#intro-box {
+  display: flex;
+  margin: 15vh 1vw 5vh 1vw;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+
+#name {
+  color: rgb(246, 73, 167);
+  text-shadow: rgb(60, 82, 209) 8px 8px 0px;
+  font-size: 9vw;
+  font-weight: 800;
+  text-align: right;
+  max-width: 600px;
+  line-height: 15vh;
+  margin: 1vh 1vw;
+}
+
+#slash {
+  margin-left: 5vw;
+  color: #f7f7f7;
+  display: inline-block;
+  -webkit-transform: scale(2, 1); /* Safari and Chrome */
+  -moz-transform: scale(2, 1); /* Firefox */
+  -ms-transform: scale(2, 1); /* IE 9 */
+  -o-transform: scale(2, 1); /* Opera */
+  transform: scale(2, 15); /* W3C */
+}
+
+#job-title {
+  font-size: 3vw;
+  max-width: 400px;
+  color: rgb(163, 202, 205);
+}
+
+/* FADE IN FOR NAME */
+.fade-in {
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* FADE IN FOR TITLE */
+.fade-in2 {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#intro-brand-statement {
+  color: rgb(163, 202, 205);
+  max-width: 65vw;
+  text-align: center;
+}
+
+#link-description {
+  color: rgb(246, 73, 167);
+  text-align: center;
+  margin-bottom: 5vh;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+/* TO MAKE THE THE LINE APPEAR ON HOVER  */
+#link-description:hover {
+  color: rgb(89, 223, 127);
+}
+
+a#link-description {
+  position: relative;
+}
+
+a#link-description::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(89, 223, 127);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a#link-description:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 1450px) {
+  #name {
+    font-size: 9vw;
+    text-align: right;
+    max-width: 600px;
+    line-height: 13vh;
+    margin: 1vh 1vw;
+  }
+
+  #slash {
+    margin: 0 2vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #name {
+    line-height: 11vh;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #name {
+    line-height: 8vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #name {
+    line-height: 6vh;
+  }
+}

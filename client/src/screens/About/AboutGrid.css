@@ -1,0 +1,12 @@
+.abt-img {
+  width: 15vw;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 5vh;
+  margin-bottom: 1.5vh;
+}
+
+#profile {
+  width: 20vw;
+  height: auto;
+}
