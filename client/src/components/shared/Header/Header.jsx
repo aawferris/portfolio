@@ -8,7 +8,6 @@ function Header(props) {
   return (
     <div id="main-header-container">
       <div id="header-left">
-        {/* <Link to="/"><img id="profile-pic" src="/assets/profile.jpg"  alt="the guy you want to hire"/></Link> */}
         <Link id="name-link" class="w3-animate-left" to="/"><p id="header-name">Andrew Ferris</p></Link>
       </div>
       <div id="header-right">
