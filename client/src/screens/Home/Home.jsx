@@ -1,6 +1,5 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom'
-import CustomChatbot from "../../components/chatbot/CustomChatBot"
 import Layout from '../../components/shared/Layout/Layout'
 
 import './Home.css'

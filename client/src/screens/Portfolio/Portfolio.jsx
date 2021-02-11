@@ -10,6 +10,7 @@ function Portfolio(props) {
   const [showFifth, setShowFifth] = useState(false)
   const [showSixth, setShowSix] = useState(false)
   const [showSeventh, setShowSeventh] = useState(false)
+  const [showEight, setShowEight] = useState(false)
 
   const handleClick1 = () => {
     setShowFirst(true)
@@ -19,6 +20,7 @@ function Portfolio(props) {
     setShowFifth(false)
     setShowSix(false)
     setShowSeventh(false)
+    setShowEight(false)
   }
 
   const handleClick2 = () => {
@@ -29,6 +31,7 @@ function Portfolio(props) {
     setShowFifth(false)
     setShowSix(false)
     setShowSeventh(false)
+    setShowEight(false)
   }
 
   const handleClick3 = () => {
@@ -39,6 +42,7 @@ function Portfolio(props) {
     setShowFifth(false)
     setShowSix(false)
     setShowSeventh(false)
+    setShowEight(false)
   }
 
   const handleClick4 = () => {
@@ -49,6 +53,7 @@ function Portfolio(props) {
     setShowFifth(false)
     setShowSix(false)
     setShowSeventh(false)
+    setShowEight(false)
   }
 
   const handleClick5 = () => {
@@ -59,6 +64,7 @@ function Portfolio(props) {
     setShowFifth(true)
     setShowSix(false)
     setShowSeventh(false)
+    setShowEight(false)
   }
 
   const handleClick6 = () => {
@@ -69,6 +75,7 @@ function Portfolio(props) {
     setShowFifth(false)
     setShowSix(true)
     setShowSeventh(false)
+    setShowEight(false)
   }
 
   const handleClick7 = () => {
@@ -79,6 +86,18 @@ function Portfolio(props) {
     setShowFifth(false)
     setShowSix(false)
     setShowSeventh(true)
+    setShowEight(false)
+  }
+
+  const handleClick8 = () => {
+    setShowFirst(false)
+    setShowSecond(false)
+    setShowThird(false)
+    setShowFourth(false)
+    setShowFifth(false)
+    setShowSix(false)
+    setShowSeventh(false)
+    setShowEight(true)
   }
 
   return (
@@ -139,6 +158,14 @@ function Portfolio(props) {
                 className="btn-show"
                 onClick={() => handleClick7()}>
                 <a className="proj-name">Text2Speech</a>
+              </button>
+          </div>
+
+          <div className="project">
+              <button
+                className="btn-show"
+                onClick={() => handleClick8()}>
+                <a className="proj-name">Netflix Clone</a>
               </button>
           </div>
 
@@ -252,6 +279,34 @@ function Portfolio(props) {
           ) : (
               <div></div>
         )}
+
+        {showEight ? (
+                    <div className="hide-me">
+                      <p className="proj-lang">Built with: Javascript, CSS, HTML5, React.js, Firebase</p>
+                      <p className="proj-desc">A Front End Netflix Clone</p>
+                      <img className="proj-img" src="/assets/netflix.png" alt="image of front page" />
+                      <div id="proj-link-container">
+                        <a className="proj-link" href="https://github.com/aawferris/netflix" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
+                      </div>
+                    </div>
+                  ) : (
+                      <div></div>
+                )}
+
+        {showEight ? (
+                    <div className="hide-me">
+                      <p className="proj-lang">Built with: Javascript, CSS, HTML5, React.js, Firebase</p>
+                      <p className="proj-desc">I did a code along with Clever Developer to build this Netflix Clone.  The clone is a 'front page' version of Netflix.  Users can click on a movie to see its trailer as well. In later iterations, I want to add text when the user hovers over an image tile as well as make this into a fullstack app.</p>
+                      <img className="proj-img" src="/assets/netflix.png" alt="" />
+                      <div className="proj-link-container">
+                        <a className="proj-link" href="https://github.com/aawferris/netflix" target="_blank" rel="noreferrer" alt="this repo's github">REPO</a>
+                        <a className="proj-link" href="https://netflix-clone-94289.web.app" target="_blank" rel="noreferrer" alt="live site for this link">SITE</a>
+                      </div>
+                    </div>
+                  ) : (
+                      <div></div>
+                  )}
+
 
     </div>
   </Layout>
